@@ -993,10 +993,20 @@
       "ts": 1786631407,
       "type": "automation",
       "message": "executed: Code Deployment Alert via github"
+    },
+    {
+      "ts": 1786631408,
+      "type": "github_sync",
+      "message": "Synced project to GitHub: https://github.com/Kylestew35/test/blob/main/autopilot-projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5.json"
+    },
+    {
+      "ts": 1786636475,
+      "type": "standup",
+      "message": "Daily standup enabled"
     }
   ],
   "autonomyEnabled": false,
-  "dailyStandupEnabled": false,
+  "dailyStandupEnabled": true,
   "integrationActions": [
     {
       "system": "jira",
