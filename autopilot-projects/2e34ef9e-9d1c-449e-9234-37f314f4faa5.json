@@ -953,9 +953,19 @@
       "ts": 1786631394,
       "type": "standup",
       "message": "Daily standup disabled"
+    },
+    {
+      "ts": 1786631395,
+      "type": "github_sync",
+      "message": "Synced project to GitHub: https://github.com/Kylestew35/test/blob/main/autopilot-projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5.json"
+    },
+    {
+      "ts": 1786631400,
+      "type": "autonomy",
+      "message": "Autonomous mode enabled"
     }
   ],
-  "autonomyEnabled": false,
+  "autonomyEnabled": true,
   "dailyStandupEnabled": false,
   "integrationActions": [
     {
