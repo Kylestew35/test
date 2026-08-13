@@ -1003,6 +1003,16 @@
       "ts": 1786636475,
       "type": "standup",
       "message": "Daily standup enabled"
+    },
+    {
+      "ts": 1786636476,
+      "type": "github_sync",
+      "message": "Synced project to GitHub: https://github.com/Kylestew35/test/blob/main/autopilot-projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5.json"
+    },
+    {
+      "ts": 1786636540,
+      "type": "standup",
+      "message": "Daily standup digest simulated to Slack."
     }
   ],
   "autonomyEnabled": false,
@@ -1145,5 +1155,6 @@
     "mode": "warn",
     "requiresExplicitApproval": false
   },
-  "lastAutopilotDecisionAt": 1786630442
+  "lastAutopilotDecisionAt": 1786630442,
+  "lastStandupDate": "2026-08-13"
 }
