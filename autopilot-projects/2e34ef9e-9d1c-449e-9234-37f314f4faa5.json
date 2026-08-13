@@ -1,0 +1,1019 @@
+{
+  "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+  "projectName": "building a mobile device company",
+  "description": "I need a full year worth of data and guides to build a mobile device company ",
+  "timestamp": 1786630442,
+  "interpreter": {
+    "projectName": "building a mobile device company",
+    "description": "I need a full year worth of data and guides to build a mobile device company ",
+    "goals": [
+      "Define product specifications and target market",
+      "Develop a functional hardware prototype",
+      "Establish a reliable global supply chain",
+      "Execute a successful market launch and first production run"
+    ],
+    "phases": [
+      {
+        "name": "Phase 1: Research & Product Definition",
+        "summary": "Market analysis, technical specification drafting, and feasibility studies.",
+        "workstreams": [
+          {
+            "name": "Market Intelligence",
+            "summary": "Analyzing competitor landscape and consumer demand."
+          },
+          {
+            "name": "Technical Architecture",
+            "summary": "Defining SoC, display, battery, and sensor requirements."
+          }
+        ]
+      },
+      {
+        "name": "Phase 2: R&D and Prototyping",
+        "summary": "Hardware engineering, PCB design, and software/OS development.",
+        "workstreams": [
+          {
+            "name": "Hardware Engineering",
+            "summary": "Circuit design, component selection, and prototype assembly."
+          },
+          {
+            "name": "Software Development",
+            "summary": "Android/Custom OS skin development and driver integration."
+          }
+        ]
+      },
+      {
+        "name": "Phase 3: Supply Chain & Manufacturing Setup",
+        "summary": "Sourcing vendors, factory auditing, and logistics planning.",
+        "workstreams": [
+          {
+            "name": "Vendor Management",
+            "summary": "Contracting component suppliers and assembly partners."
+          },
+          {
+            "name": "Quality Assurance Setup",
+            "summary": "Defining testing protocols and manufacturing standards."
+          }
+        ]
+      },
+      {
+        "name": "Phase 4: Go-to-Market & Launch",
+        "summary": "Marketing execution, distribution setup, and initial sales.",
+        "workstreams": [
+          {
+            "name": "Marketing & Branding",
+            "summary": "Brand identity creation and digital advertising campaigns."
+          },
+          {
+            "name": "Distribution Logistics",
+            "summary": "Setting up e-commerce and retail partnership networks."
+          }
+        ]
+      }
+    ],
+    "risks": [
+      {
+        "name": "Supply Chain Disruption",
+        "impact": "High - Delays production and increases costs.",
+        "mitigation": "Identify and qualify secondary suppliers for critical components."
+      },
+      {
+        "name": "Hardware/Software Incompatibility",
+        "impact": "Critical - Product failure or poor user experience.",
+        "mitigation": "Implement rigorous iterative testing cycles during Phase 2."
+      },
+      {
+        "name": "Regulatory Non-compliance",
+        "impact": "High - Legal bans and inability to sell in key regions.",
+        "mitigation": "Engage compliance experts for FCC, CE, and RoHS certification early."
+      }
+    ],
+    "automations": [
+      {
+        "id": "auto_01",
+        "name": "Bug Notification",
+        "system": "jira",
+        "trigger": "New high-priority bug reported in hardware/software",
+        "action": "Post alert to engineering Slack channel"
+      },
+      {
+        "id": "auto_02",
+        "name": "Supply Chain Update",
+        "system": "notion",
+        "trigger": "Vendor delivery date changed in database",
+        "action": "Update project timeline and notify procurement team"
+      },
+      {
+        "id": "auto_03",
+        "name": "Code Deployment Alert",
+        "system": "github",
+        "trigger": "New release tag created for OS build",
+        "summary": "Notify QA team of new firmware available for testing",
+        "action": "Send notification to Slack"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "t_01",
+        "name": "Research & Definition",
+        "phase": "Phase 1: Research & Product Definition",
+        "start": "2024-01-01",
+        "end": "2024-03-31"
+      },
+      {
+        "id": "t_02",
+        "name": "Prototyping & R&D",
+        "phase": "Phase 2: R&D and Prototyping",
+        "start": "2024-04-01",
+        "end": "2024-07-31"
+      },
+      {
+        "id": "t_03",
+        "name": "Manufacturing Setup",
+        "phase": "Phase 3: Supply Chain & Manufacturing Setup",
+        "start": "2024-08-01",
+        "end": "2024-10-31"
+      },
+      {
+        "id": "t_04",
+        "name": "Market Launch",
+        "phase": "Phase 4: Go-to-Market & Launch",
+        "start": "2024-11-01",
+        "end": "2024-12-31"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj_01",
+        "description": "Complete Bill of Materials (BOM) by end of Month 3."
+      },
+      {
+        "id": "obj_02",
+        "description": "Achieve working prototype with stable OS by end of Month 7."
+      },
+      {
+        "id": "obj_03",
+        "description": "Secure manufacturing partner and initial component orders by Month 9."
+      },
+      {
+        "id": "obj_04",
+        "description": "Execute pre-order campaign with target conversion rate by Month 11."
+      }
+    ]
+  },
+  "rawPlan": {
+    "projectName": "building a mobile device company",
+    "description": "I need a full year worth of data and guides to build a mobile device company ",
+    "goals": [
+      "Define product specifications and target market",
+      "Develop a functional hardware prototype",
+      "Establish a reliable global supply chain",
+      "Execute a successful market launch and first production run"
+    ],
+    "phases": [
+      {
+        "name": "Phase 1: Research & Product Definition",
+        "summary": "Market analysis, technical specification drafting, and feasibility studies.",
+        "workstreams": [
+          {
+            "name": "Market Intelligence",
+            "summary": "Analyzing competitor landscape and consumer demand."
+          },
+          {
+            "name": "Technical Architecture",
+            "summary": "Defining SoC, display, battery, and sensor requirements."
+          }
+        ]
+      },
+      {
+        "name": "Phase 2: R&D and Prototyping",
+        "summary": "Hardware engineering, PCB design, and software/OS development.",
+        "workstreams": [
+          {
+            "name": "Hardware Engineering",
+            "summary": "Circuit design, component selection, and prototype assembly."
+          },
+          {
+            "name": "Software Development",
+            "summary": "Android/Custom OS skin development and driver integration."
+          }
+        ]
+      },
+      {
+        "name": "Phase 3: Supply Chain & Manufacturing Setup",
+        "summary": "Sourcing vendors, factory auditing, and logistics planning.",
+        "workstreams": [
+          {
+            "name": "Vendor Management",
+            "summary": "Contracting component suppliers and assembly partners."
+          },
+          {
+            "name": "Quality Assurance Setup",
+            "summary": "Defining testing protocols and manufacturing standards."
+          }
+        ]
+      },
+      {
+        "name": "Phase 4: Go-to-Market & Launch",
+        "summary": "Marketing execution, distribution setup, and initial sales.",
+        "workstreams": [
+          {
+            "name": "Marketing & Branding",
+            "summary": "Brand identity creation and digital advertising campaigns."
+          },
+          {
+            "name": "Distribution Logistics",
+            "summary": "Setting up e-commerce and retail partnership networks."
+          }
+        ]
+      }
+    ],
+    "risks": [
+      {
+        "name": "Supply Chain Disruption",
+        "impact": "High - Delays production and increases costs.",
+        "mitigation": "Identify and qualify secondary suppliers for critical components."
+      },
+      {
+        "name": "Hardware/Software Incompatibility",
+        "impact": "Critical - Product failure or poor user experience.",
+        "mitigation": "Implement rigorous iterative testing cycles during Phase 2."
+      },
+      {
+        "name": "Regulatory Non-compliance",
+        "impact": "High - Legal bans and inability to sell in key regions.",
+        "mitigation": "Engage compliance experts for FCC, CE, and RoHS certification early."
+      }
+    ],
+    "automations": [
+      {
+        "id": "auto_01",
+        "name": "Bug Notification",
+        "system": "jira",
+        "trigger": "New high-priority bug reported in hardware/software",
+        "action": "Post alert to engineering Slack channel"
+      },
+      {
+        "id": "auto_02",
+        "name": "Supply Chain Update",
+        "system": "notion",
+        "trigger": "Vendor delivery date changed in database",
+        "action": "Update project timeline and notify procurement team"
+      },
+      {
+        "id": "auto_03",
+        "name": "Code Deployment Alert",
+        "system": "github",
+        "trigger": "New release tag created for OS build",
+        "summary": "Notify QA team of new firmware available for testing",
+        "action": "Send notification to Slack"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "t_01",
+        "name": "Research & Definition",
+        "phase": "Phase 1: Research & Product Definition",
+        "start": "2024-01-01",
+        "end": "2024-03-31"
+      },
+      {
+        "id": "t_02",
+        "name": "Prototyping & R&D",
+        "phase": "Phase 2: R&D and Prototyping",
+        "start": "2024-04-01",
+        "end": "2024-07-31"
+      },
+      {
+        "id": "t_03",
+        "name": "Manufacturing Setup",
+        "phase": "Phase 3: Supply Chain & Manufacturing Setup",
+        "start": "2024-08-01",
+        "end": "2024-10-31"
+      },
+      {
+        "id": "t_04",
+        "name": "Market Launch",
+        "phase": "Phase 4: Go-to-Market & Launch",
+        "start": "2024-11-01",
+        "end": "2024-12-31"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj_01",
+        "description": "Complete Bill of Materials (BOM) by end of Month 3."
+      },
+      {
+        "id": "obj_02",
+        "description": "Achieve working prototype with stable OS by end of Month 7."
+      },
+      {
+        "id": "obj_03",
+        "description": "Secure manufacturing partner and initial component orders by Month 9."
+      },
+      {
+        "id": "obj_04",
+        "description": "Execute pre-order campaign with target conversion rate by Month 11."
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "taskId": "task_c629a216",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "jira",
+      "type": "automation",
+      "title": "Implement automation: Bug Notification",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Automation",
+        "workstream": "Bug Notification",
+        "summary": "Post alert to engineering Slack channel"
+      },
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_15b1d654",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "notion",
+      "type": "automation",
+      "title": "Implement automation: Supply Chain Update",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Automation",
+        "workstream": "Supply Chain Update",
+        "summary": "Update project timeline and notify procurement team"
+      },
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_05f2565e",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "github",
+      "type": "automation",
+      "title": "Implement automation: Code Deployment Alert",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Automation",
+        "workstream": "Code Deployment Alert",
+        "summary": "Send notification to Slack"
+      },
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_1c073bc3",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "task",
+      "type": "objective",
+      "title": "Complete objective: Complete Bill of Materials (BOM) by end of Month 3.",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Objectives",
+        "workstream": "Complete Bill of Materials (BOM) by end of Month 3.",
+        "summary": "Complete Bill of Materials (BOM) by end of Month 3."
+      },
+      "priority": "high",
+      "assignee": "Delivery Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_0550f2e9",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "task",
+      "type": "objective",
+      "title": "Complete objective: Achieve working prototype with stable OS by end of Month 7.",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Objectives",
+        "workstream": "Achieve working prototype with stable OS by end of Month 7.",
+        "summary": "Achieve working prototype with stable OS by end of Month 7."
+      },
+      "priority": "high",
+      "assignee": "Delivery Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_80898b65",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "task",
+      "type": "objective",
+      "title": "Complete objective: Secure manufacturing partner and initial component orders by Month 9.",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Objectives",
+        "workstream": "Secure manufacturing partner and initial component orders by Month 9.",
+        "summary": "Secure manufacturing partner and initial component orders by Month 9."
+      },
+      "priority": "high",
+      "assignee": "Delivery Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_c2133847",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "task",
+      "type": "objective",
+      "title": "Complete objective: Execute pre-order campaign with target conversion rate by Month 11.",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Objectives",
+        "workstream": "Execute pre-order campaign with target conversion rate by Month 11.",
+        "summary": "Execute pre-order campaign with target conversion rate by Month 11."
+      },
+      "priority": "high",
+      "assignee": "Delivery Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_ce8f7c43",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "internal",
+      "type": "risk_mitigation",
+      "title": "Mitigate risk: Supply Chain Disruption",
+      "createdAt": "2026-08-13T14:14:02Z",
+      "status": "generated",
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "payload": {
+        "phase": "Risk Management",
+        "workstream": "Mitigation",
+        "summary": "Identify and qualify secondary suppliers for critical components."
+      },
+      "requiresApproval": false
+    },
+    {
+      "taskId": "task_0d398e54",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "internal",
+      "type": "risk_mitigation",
+      "title": "Mitigate risk: Hardware/Software Incompatibility",
+      "createdAt": "2026-08-13T14:14:02Z",
+      "status": "generated",
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "payload": {
+        "phase": "Risk Management",
+        "workstream": "Mitigation",
+        "summary": "Implement rigorous iterative testing cycles during Phase 2."
+      },
+      "requiresApproval": false
+    },
+    {
+      "taskId": "task_badc5348",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "internal",
+      "type": "risk_mitigation",
+      "title": "Mitigate risk: Regulatory Non-compliance",
+      "createdAt": "2026-08-13T14:14:02Z",
+      "status": "generated",
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "payload": {
+        "phase": "Risk Management",
+        "workstream": "Mitigation",
+        "summary": "Engage compliance experts for FCC, CE, and RoHS certification early."
+      },
+      "requiresApproval": false
+    },
+    {
+      "taskId": "task_ee7d9eed",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Phase 1: Research & Product Definition: Market Intelligence",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Phase 1: Research & Product Definition",
+        "workstream": "Market Intelligence",
+        "summary": "Analyzing competitor landscape and consumer demand."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_10d8310f",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Phase 1: Research & Product Definition: Technical Architecture",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Phase 1: Research & Product Definition",
+        "workstream": "Technical Architecture",
+        "summary": "Defining SoC, display, battery, and sensor requirements."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_33a226ee",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Phase 2: R&D and Prototyping: Hardware Engineering",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Phase 2: R&D and Prototyping",
+        "workstream": "Hardware Engineering",
+        "summary": "Circuit design, component selection, and prototype assembly."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_f4d3927a",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Phase 2: R&D and Prototyping: Software Development",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Phase 2: R&D and Prototyping",
+        "workstream": "Software Development",
+        "summary": "Android/Custom OS skin development and driver integration."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_4dd48e15",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Phase 3: Supply Chain & Manufacturing Setup: Vendor Management",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Phase 3: Supply Chain & Manufacturing Setup",
+        "workstream": "Vendor Management",
+        "summary": "Contracting component suppliers and assembly partners."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_a1922a54",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Phase 3: Supply Chain & Manufacturing Setup: Quality Assurance Setup",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Phase 3: Supply Chain & Manufacturing Setup",
+        "workstream": "Quality Assurance Setup",
+        "summary": "Defining testing protocols and manufacturing standards."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_771c3189",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Phase 4: Go-to-Market & Launch: Marketing & Branding",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Phase 4: Go-to-Market & Launch",
+        "workstream": "Marketing & Branding",
+        "summary": "Brand identity creation and digital advertising campaigns."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_fe94ba9e",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Phase 4: Go-to-Market & Launch: Distribution Logistics",
+      "createdAt": "2026-08-13T14:07:49Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Phase 4: Go-to-Market & Launch",
+        "workstream": "Distribution Logistics",
+        "summary": "Setting up e-commerce and retail partnership networks."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    }
+  ],
+  "documents": [
+    {
+      "docId": "doc_87fcdafb",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "docType": "Project Brief",
+      "content": "PROJECT BRIEF: MOBILE DEVICE COMPANY LAUNCH\n\nMISSION\nTo establish a competitive mobile device brand by executing a structured 12-month roadmap that integrates innovative hardware engineering, seamless software integration, and a scalable global supply chain to deliver a market-ready consumer product.\n\nSCOPE\nThe project encompasses the end-to-end lifecycle of product development, including:\n- Market Intelligence: Competitor analysis and technical specification drafting.\n- R&D: Hardware engineering (PCB/circuit design) and software development (Android/Custom OS).\n- Manufacturing Setup: Vendor sourcing, factory auditing, and quality assurance protocol establishment.\n- Go-to-Market: Brand identity creation, digital marketing execution, and distribution network setup.\n\nPROJECT GOALS\n1. Product Definition: Complete technical architecture and Bill of Materials (BOM) by Month 3.\n2. Prototyping: Deliver a functional hardware prototype with a stable operating system by Month 7.\n3. Supply Chain: Secure manufacturing partners and finalize initial component orders by Month 9.\n4. Market Entry: Execute a successful pre-order campaign and first production run by Month 12.\n\nCONSTRAINTS AND RISKS\n- Timeline Constraints: All phases must be completed within the fixed 12-month window (January to December).\n- Technical Constraints: High dependency on seamless hardware/software compatibility; failure in integration poses a critical risk to product viability.\n- Regulatory Constraints: Mandatory adherence to international standards, including FCC, CE, and RoHS certifications, to ensure legal market access.\n- Operational Risks: Vulnerability to global supply chain disruptions; requires proactive identification of secondary suppliers to prevent production delays.",
+      "url": "https://localhost:8000/projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5/documents/project-brief",
+      "createdAt": 1786630100
+    },
+    {
+      "docId": "doc_9959c098",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "docType": "Execution Plan",
+      "content": "EXECUTION PLAN: MOBILE DEVICE COMPANY LAUNCH\n\nPHASE 1: RESEARCH & PRODUCT DEFINITION\nTimeline: January - March\nPrimary Owner: Product Manager\nSequence:\n1. Execute Market Intelligence workstream to analyze competitor landscape and consumer demand.\n2. Develop Technical Architecture, defining SoC, display, battery, and sensor requirements.\n3. Finalize product specifications based on feasibility studies.\nKey Milestone: Completion of Bill of Marks (BOM) and technical specs by end of Month 3.\n\nPHASE 2: R&D AND PROTOTYPING\nTimeline: April - July\nPrimary Owners: Lead Hardware Engineer & Software Architect\nSequence:\n1. Initiate Hardware Engineering, focusing on circuit design, component selection, and PCB assembly.\n2. Parallelize Software Development for Android/Custom OS skin and driver integration.\n3. Conduct iterative testing cycles to mitigate hardware/software incompatibility risks.\nKey Milestone: Delivery of a functional prototype with stable OS by end of Month 7.\n\nPHASE 3: SUPPLY CHAIN & MANUFACTURING SETUP\nTimeline: August - October\nPrimary Owner: Supply Chain Manager\nSequence:\n1. Execute Vendor Management to contract component suppliers and assembly partners.\n2. Perform factory auditing and finalize logistics planning.\n3. Establish Quality Assurance Setup, defining testing protocols and manufacturing standards.\nKey Milestone: Secured manufacturing partner and placement of initial component orders by Month 9.\n\nPHASE 4: GO-TO-MARKET & LAUNCH\nTimeline: November - December\nPrimary Owner: Marketing Director\nSequence:\n1. Execute Marketing & Branding workstream to create brand identity and digital campaigns.\n2. Establish Distribution Logistics, setting up e-commerce platforms and retail networks.\n3. Launch pre-order campaign to drive initial sales volume.\nKey Milestone: Successful execution of pre-order campaign with target conversion rates by Month 11.",
+      "url": "https://localhost:8000/projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5/documents/execution-plan",
+      "createdAt": 1786630146
+    },
+    {
+      "docId": "doc_c66d42bd",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "docType": "Risk Log",
+      "content": "RISK LOG: MOBILE DEVICE COMPANY PROJECT\n\nIDENTIFIED RISKS AND MITIGATIONS\n\nRisk: Supply Chain Disruption\nImpact: High - Delays production and increases costs.\nMitigation: Identify and qualify secondary suppliers for critical components; maintain safety stock of long-lead items.\n\nRisk: Hardware/Software Incompatibility\nImpact: Critical - Product failure or poor user experience.\nMitigation: Implement rigorous iterative testing cycles during Phase 2; establish early driver integration protocols.\n\nRisk: Regulatory Non-compliance (FCC, CE, RoHS)\nImpact: High - Legal bans and inability to sell in key regions.\nMitigation: Engage compliance experts during the Technical Architecture phase; schedule pre-certification audits.\n\nRisk: Component Cost Volatility (BOM Inflation)\nImpact: Medium - Reduced profit margins or budget exhaustion.\nMitigation: Finalize BOM early; lock in pricing with vendors via long-term supply agreements.\n\nRisk: Talent Acquisition Delay\nImpact: High - Delays in R&D and prototype development.\nMitigation: Initiate recruitment 3 months prior to Phase 2 start; utilize specialized contract engineering firms for surge capacity.\n\nCRITICAL DEPENDENCIES\n\n1. Technical Specifications -> Prototype Development: Hardware engineering cannot begin without finalized SoC, display, and battery requirements from Phase 1.\n2. Working Prototype -> Manufacturing Setup: Vendor selection and factory auditing are dependent on a stable, finalized hardware design and BOM.\n3. BOM Finalization -> Component Procurement: Order placement for long-lead components is blocked until the Bill of Materials is audited and approved.\n4. Regulatory Approval -> Market Launch: The ability to execute Phase 4 is strictly dependent on receiving all regional certifications (FCC/CE).\n\nPOTENTIAL PROJECT BLOCKERS\n\n1. Chipset Availability: Failure to secure a primary SoC supplier will halt all hardware engineering and software driver development.\n2. Prototype Failure: A failure to achieve a stable OS/Hardware integration by Month 7 will delay the entire manufacturing timeline.\n3. Funding Shortfall: Inability to meet capital requirements for initial production runs will prevent transition from R&D to Manufacturing.",
+      "url": "https://localhost:8000/projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5/documents/risk-log",
+      "createdAt": 1786630196
+    },
+    {
+      "docId": "doc_1780cd80",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "docType": "Stakeholder Summary",
+      "content": "STAKEHOLDER SUMMARY: MOBILE DEVICE COMPANY LAUNCH\n\nPROJECT OVERVIEW\nA 12-month initiative to transition from market research and technical definition to a full-scale hardware launch, encompassing R&D, supply chain establishment, and global distribution.\n\nKEY STAKEHOLDERS (WHO IS INVOLVED)\n\nProduct & Strategy: Product Managers and Market Analysts responsible for defining specifications and consumer demand alignment.\nEngineering & R&D: Hardware Engineers (PCB/Circuit design), Software Developers (OS/Driver integration), and the QA Team (Testing protocols).\nOperations & Supply Chain: Procurement Specialists, Vendor Management, Manufacturing Partners, and Logistics Coordinators.\nCommercial & Marketing: Brand Managers, Digital Advertising Teams, and Distribution/Retail Partners.\n\nCRITICAL DECISION POINTS (DECISIONS NEEDED)\n\nProduct Definition: Final approval of technical specifications including SoC, display, battery, and sensor requirements.\nEngineering Milestones: Go/No-Go decisions following prototype testing and OS stability assessments.\nSupply Chain Strategy: Selection and auditing of primary and secondary component suppliers and assembly partners.\nRegulatory Compliance: Approval of certification readiness for FCC, CE, and RoHS standards.\nMarket Entry: Finalization of pricing models, pre-order campaign strategy, and retail distribution networks.\n\nCOMMUNICATION PROTOCOL (COMMUNICATION POINTS)\n\nTechnical Alerts: High-priority hardware/software bugs will trigger immediate notifications to the Engineering Slack channel via Jira.\nSupply Chain Updates: Any changes in vendor delivery dates will automatically update the project timeline in Notion and notify the Procurement team.\nSoftware Releases: New firmware or OS builds will trigger automated alerts from GitHub to the QA team for testing commencement.\nProject Milestones: Regular reporting on critical objectives, including Bill of Materials (BOM) completion, prototype stability, and manufacturing readiness.",
+      "url": "https://localhost:8000/projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5/documents/stakeholder-summary",
+      "createdAt": 1786630232
+    },
+    {
+      "docId": "doc_5d5790ef",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "docType": "Action Register",
+      "content": "ACTION REGISTER: MOBILE DEVICE COMPANY PROJECT\n\nID | TASK NAME | PRIORITY | ASSIGANCE | NEXT ACTION | DUE DATE\n--------------------------------------------------------------------------------\n01 | Market Intelligence & Competitor Analysis | High | Product Manager | Complete competitor feature matrix and demand report | 2024-02-28\n02 | Technical Specification Finalization | High | Hardware Lead | Draft initial Bill of Materials (BOM) | 2024-03-31\n03 | PCB Design & Component Selection | High | Hardware Engineer | Order long-lead time components for prototype | 2024-05-15\n04 | OS/Android Skin Development | Medium | Software Lead | Establish driver integration and testing environment | 2024-07-31\n05 | Vendor Sourcing & Contract Negotiation | High | Procurement Manager | Audit primary assembly partners and finalize contracts | 2024-08-31\n06 | Regulatory Compliance (FCC/CE/RoHS) | Critical | Compliance Officer | Engage certification labs for pre-compliance testing | 2024-09-30\n07 | Brand Identity & Marketing Strategy | Medium | Marketing Lead | Finalize brand guidelines and digital ad assets | 2024-10-31\n08 | Distribution & E-commerce Setup | Medium | Operations Manager | Secure logistics partners and warehouse space | 2024-11-15\n09 | Pre-order Campaign Launch | High | Marketing Lead | Execute social media and email marketing launch | 2024-11-30",
+      "url": "https://localhost:8000/projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5/documents/action-register",
+      "createdAt": 1786630295
+    },
+    {
+      "docId": "doc_46c61cb8",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "docType": "Travel Itinerary",
+      "content": "PROJECT TRAVEL ITINERARY: MOBILE DEVICE COMPANY LAUNCH 2024\n\nTRIP 1: MARKET INTELLIGENCE & SPECIFICATION (JANUARY 15 - FEBRUARY 05)\nLocation: San Francisco, USA and London, UK\nSchedule:\nJan 15-25: Competitor landscape analysis and hardware teardown sessions in Silicon Valley.\nJan 26-Feb 02: Consumer demand focus groups and market trend workshops in London.\nFeb 03-05: Finalization of technical architecture requirements with remote engineering leads.\nLogistics: International flights (SFO/LHR), hotel stays near tech hubs, local car rentals for site visits.\n\nTRIP 2: R&D AND PROTOTYPING INTENSIVE (MAY 01 - JUNE 15)\nLocation: Shenzhen, China\nSchedule:\nMay 01-15: Component sourcing meetings with SoC and display vendors.\nMay 16-31: On-site PCB design reviews and hardware engineering workshops at local labs.\nJune 01-15: Prototype assembly oversight and initial software/driver integration testing.\nLogistics: Business visa processing, Shenzhen airport transfers, factory-provided shuttle services, local translation support.\n\nTRIP 3: SUPPLY CHAIN & MANUFACTURING SETUP (AUGUST 15 - SEPTEMBER 30)\nLocation: Taipei, Taiwan and Guangdong Province, China\nSchedule:\nAug 15-30: Semiconductor and sensor vendor audits in Taiwan.\nSept 01-20: Factory auditing, assembly line setup, and QA protocol implementation in Shenzhen.\nSept 21-30: Finalization of logistics, warehousing, and secondary supplier contracts.\nLogistics: Regional flights (TPE to SZX), hotel proximity to manufacturing zones, heavy reliance on local logistics partners for factory access.\n\nTRIP 4: GLOBAL LAUNCH & DISTRIBUTION (NOVEMBER 10 - DECEMBER 20)\nLocation: Las Vegas, USA and Barcelona, Spain\nSchedule:\nNov 10-25: Pre-order campaign execution and media/influencer briefing sessions.\nNov 26-Dec 05: Presence at major industry trade shows for product demonstrations.\nDec 06-20: Meeting with e-commerce partners and retail distribution network setup.\nLogistics: Conference center hotel bookings, secure shipping of demo units, coordination with local marketing agencies.",
+      "url": "https://localhost:8000/projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5/documents/travel-itinerary",
+      "createdAt": 1786630360
+    },
+    {
+      "docId": "doc_1242d213",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "docType": "Booking Checklist",
+      "content": "BOOKING CHECKLIST: MOBILE DEVICE COMPANY PROJECT\n\nFLIGHTS\n[ ] Verify passport validity for international vendor audits (Phase 3)\n[ ] Book round-trip flights for technical research trips (Phase 1)\n[ ] Secure flight itineraries for engineering team prototype testing (Phase 2)\n[ ] Confirm arrival/departure alignment with factory audit schedules\n[ ] Check baggage allowances for transporting hardware prototypes\n\nLODGING\n[ ] Reserve hotels within proximity to manufacturing hubs and assembly partners\n[ ] Book accommodations near technical research centers for Phase 1\n[ ] Secure lodging for supply chain management teams during vendor inspections\n[ ] Confirm check-in/check-out dates match factory audit durations\n[ ] Verify hotel amenities include high-speed internet for remote engineering support\n\nTRANSPORT\n[ ] Arrange airport transfers for all international travel legs\n[ ] Reserve rental vehicles for multi-vendor site visits in manufacturing regions\n[ ] Coordinate local logistics for transporting prototype hardware between labs\n[ ] Schedule ground transportation for launch event personnel (Phase 4)\n[ ] Confirm availability of driver services for long-distance factory audits\n\nCONFIRMATIONS & DOCUMENTATION\n[ ] Centralize all booking reference numbers in the project master sheet\n[ ] Verify visa approvals and entry permits for all international manufacturing sites\n[ ] Maintain digital and physical copies of all travel itineraries\n[ ] Ensure all flight and hotel confirmations are synced to the team calendar\n[ ] Validate insurance coverage for international business travel\n\nMISSING RESERVATIONS (GAP ANALYSIS)\n[ ] Identify unbooked travel for upcoming Phase 3 factory audits\n[ ] Flag pending accommodation requests for technical architecture workshops\n[ ] Audit missing transport arrangements for prototype shipping/delivery legs\n[ ] Review unconfirmed flight segments for the Go-to-Market launch team",
+      "url": "https://localhost:8000/projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5/documents/booking-checklist",
+      "createdAt": 1786630390
+    },
+    {
+      "docId": "doc_b2d506f0",
+      "projectId": "2e34ef9e-9d1c-449e-9234-37f314f4faa5",
+      "docType": "Budget Planner",
+      "content": "BUDGET PLANNER: MOBILE DEVICE COMPANY LAUNCH\n\n1. ESTIMATED BUDGET ALLOCATION BY PHASE\n\nPhase 1: Research & Product Definition (10% of Total Budget)\n- Focus: Market intelligence subscriptions, technical consulting, and feasibility study documentation.\n- Primary Cost Drivers: Specialized labor and data acquisition.\n\nPhase 2: R&D and Prototyping (35% of Total Budget)\n- Focus: PCB design, component procurement for prototypes, software development environments, and lab testing.\n- Primary Cost Drivers: Engineering talent, high-frequency hardware iterations, and OS integration tools.\n\nPhase 3: Supply Chain & Manufacturing Setup (40% of Total Budget)\n- Focus: Factory tooling, vendor deposits, quality assurance equipment, and initial component inventory.\n- Primary Cost Drivers: Capital expenditure for manufacturing molds/tooling and bulk component orders.\n\nPhase 4: Go-to-Market & Launch (15% of Total Budget)\n- Focus: Brand identity creation, digital advertising, e-commerce infrastructure, and distribution logistics.\n- Primary Cost Drivers: Marketing campaign spend and retail partnership setup.\n\n2. DETAILED TRAVEL COST PROJECTIONS\n\nPhase 1 & 2: Localized Research & Sourcing (Low Intensity)\n- Scope: Regional competitor analysis and local component supplier meetings.\n- Estimated Allocation: 5% of total budget.\n- Line Items: Local transport, regional hotel stays, and technical seminar attendance.\n\nPhase 3: Global Supply Chain Audits (High Intensity)\n- Scope: International travel to manufacturing hubs (e.g., Shenzhen, Taiwan, Vietnam) for factory auditing and vendor verification.\n- Estimated Allocation: 15% of total budget.\n- Line Items: Long-haul airfare, international lodging, visa fees, on-site inspector per diems, and logistics/freight testing samples.\n\nPhase 4: Market Expansion & Distribution (Moderate Intensity)\n- Scope: Meeting with retail partners, distribution network setup, and trade show presence.\n- Estimated Allocation: 10% of total/marketing budget.\n- Line Items: Trade show booth fees, travel to regional distribution centers, and partner presentation logistics.\n\n3. PAYMENT CHECKPOINTS & MILESTONE DISBURSEMENTS\n\nCheckpoint A: Post-BOM Completion (End of Month 3)\n- Trigger: Finalized Bill of Materials (BOM) approved.\n- Action: Release funds for Phase 2 R&D hardware components and engineering labor.\n\nCheckpoint B: Prototype Validation (End of Month 7)\n- Trigger: Successful functional prototype with stable OS integration.\n- Action: Release funds for manufacturing tooling deposits and vendor contract execution.\n\nCheckpoint C: Manufacturing Readiness (End of Month 9)\n- Trigger: Secured manufacturing partner and initial component orders placed.\n- Action: Release funds for mass production inventory procurement and QA setup.\n\nCheckpoint D: Pre-Order Launch (End of Month 11)\n- Trigger: Successful launch of pre-order campaign and marketing assets live.\n- Action: Release funds for large-scale digital advertising and distribution logistics.\n\n4. CRITICAL SPENDING ASSUMPTIONS & CONTINGENCY\n\nSupply Chain Volatility Assumption:\n- A 20% contingency fund is allocated to account for sudden increases in semiconductor or rare-earth metal pricing and shipping/logistics inflation.\n\nCurrency Fluctuation Assumption:\n- All international vendor contracts assume a +/- 5% currency volatility buffer (specifically USD vs. CNY/local manufacturing currencies).\n\nR&D Iteration Assumption:\n- The budget assumes a maximum of two major hardware \"re-spins\" during Phase 2. Any additional prototype iterations will require a secondary budget review.\n\nRegulatory & Compliance Assumption:\n- Budget includes fixed estimates for FCC, CE, and RoHS certifications; any changes in regional regulatory requirements are considered high-impact risks requiring emergency fund access.",
+      "url": "https://localhost:8000/projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5/documents/budget-planner",
+      "createdAt": 1786630442
+    }
+  ],
+  "dashboard": {
+    "generatedAt": 1786630442,
+    "summary": {
+      "objectives": 4,
+      "milestones": 4,
+      "risks": 3,
+      "phases": 4,
+      "automations": 3
+    },
+    "kpis": {
+      "objectiveCount": 4,
+      "milestoneCount": 4,
+      "riskCount": 3,
+      "phaseCount": 4,
+      "automationCount": 3,
+      "highRiskCount": 0
+    },
+    "forecast": {
+      "status": "on_track",
+      "confidence": 0.85
+    },
+    "alerts": [],
+    "rawPlan": {
+      "projectName": "building a mobile device company",
+      "description": "I need a full year worth of data and guides to build a mobile device company ",
+      "goals": [
+        "Define product specifications and target market",
+        "Develop a functional hardware prototype",
+        "Establish a reliable global supply chain",
+        "Execute a successful market launch and first production run"
+      ],
+      "phases": [
+        {
+          "name": "Phase 1: Research & Product Definition",
+          "summary": "Market analysis, technical specification drafting, and feasibility studies.",
+          "workstreams": [
+            {
+              "name": "Market Intelligence",
+              "summary": "Analyzing competitor landscape and consumer demand."
+            },
+            {
+              "name": "Technical Architecture",
+              "summary": "Defining SoC, display, battery, and sensor requirements."
+            }
+          ]
+        },
+        {
+          "name": "Phase 2: R&D and Prototyping",
+          "summary": "Hardware engineering, PCB design, and software/OS development.",
+          "workstreams": [
+            {
+              "name": "Hardware Engineering",
+              "summary": "Circuit design, component selection, and prototype assembly."
+            },
+            {
+              "name": "Software Development",
+              "summary": "Android/Custom OS skin development and driver integration."
+            }
+          ]
+        },
+        {
+          "name": "Phase 3: Supply Chain & Manufacturing Setup",
+          "summary": "Sourcing vendors, factory auditing, and logistics planning.",
+          "workstreams": [
+            {
+              "name": "Vendor Management",
+              "summary": "Contracting component suppliers and assembly partners."
+            },
+            {
+              "name": "Quality Assurance Setup",
+              "summary": "Defining testing protocols and manufacturing standards."
+            }
+          ]
+        },
+        {
+          "name": "Phase 4: Go-to-Market & Launch",
+          "summary": "Marketing execution, distribution setup, and initial sales.",
+          "workstreams": [
+            {
+              "name": "Marketing & Branding",
+              "summary": "Brand identity creation and digital advertising campaigns."
+            },
+            {
+              "name": "Distribution Logistics",
+              "summary": "Setting up e-commerce and retail partnership networks."
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "name": "Supply Chain Disruption",
+          "impact": "High - Delays production and increases costs.",
+          "mitigation": "Identify and qualify secondary suppliers for critical components."
+        },
+        {
+          "name": "Hardware/Software Incompatibility",
+          "impact": "Critical - Product failure or poor user experience.",
+          "mitigation": "Implement rigorous iterative testing cycles during Phase 2."
+        },
+        {
+          "name": "Regulatory Non-compliance",
+          "impact": "High - Legal bans and inability to sell in key regions.",
+          "mitigation": "Engage compliance experts for FCC, CE, and RoHS certification early."
+        }
+      ],
+      "automations": [
+        {
+          "id": "auto_01",
+          "name": "Bug Notification",
+          "system": "jira",
+          "trigger": "New high-priority bug reported in hardware/software",
+          "action": "Post alert to engineering Slack channel"
+        },
+        {
+          "id": "auto_02",
+          "name": "Supply Chain Update",
+          "system": "notion",
+          "trigger": "Vendor delivery date changed in database",
+          "action": "Update project timeline and notify procurement team"
+        },
+        {
+          "id": "auto_03",
+          "name": "Code Deployment Alert",
+          "system": "github",
+          "trigger": "New release tag created for OS build",
+          "summary": "Notify QA team of new firmware available for testing",
+          "action": "Send notification to Slack"
+        }
+      ],
+      "timeline": [
+        {
+          "id": "t_01",
+          "name": "Research & Definition",
+          "phase": "Phase 1: Research & Product Definition",
+          "start": "2024-01-01",
+          "end": "2024-03-31"
+        },
+        {
+          "id": "t_02",
+          "name": "Prototyping & R&D",
+          "phase": "Phase 2: R&D and Prototyping",
+          "start": "2024-04-01",
+          "end": "2024-07-31"
+        },
+        {
+          "id": "t_03",
+          "name": "Manufacturing Setup",
+          "phase": "Phase 3: Supply Chain & Manufacturing Setup",
+          "start": "2024-08-01",
+          "end": "2024-10-31"
+        },
+        {
+          "id": "t_04",
+          "name": "Market Launch",
+          "phase": "Phase 4: Go-to-Market & Launch",
+          "start": "2024-11-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "obj_01",
+          "description": "Complete Bill of Materials (BOM) by end of Month 3."
+        },
+        {
+          "id": "obj_02",
+          "description": "Achieve working prototype with stable OS by end of Month 7."
+        },
+        {
+          "id": "obj_03",
+          "description": "Secure manufacturing partner and initial component orders by Month 9."
+        },
+        {
+          "id": "obj_04",
+          "description": "Execute pre-order campaign with target conversion rate by Month 11."
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "ts": 1786630442,
+      "type": "created",
+      "message": "Project created."
+    },
+    {
+      "ts": 1786630442,
+      "type": "automation",
+      "message": "simulated: Bug Notification via jira"
+    },
+    {
+      "ts": 1786630442,
+      "type": "automation",
+      "message": "simulated: Supply Chain Update via notion"
+    },
+    {
+      "ts": 1786630443,
+      "type": "automation",
+      "message": "executed: Code Deployment Alert via github"
+    }
+  ],
+  "autonomyEnabled": false,
+  "dailyStandupEnabled": false,
+  "integrationActions": [
+    {
+      "system": "jira",
+      "name": "Bug Notification",
+      "status": "simulated",
+      "result": {
+        "simulated": true,
+        "system": "jira",
+        "summary": "Bug Notification",
+        "description": "Post alert to engineering Slack channel",
+        "retryAttempted": true,
+        "requiresApproval": true
+      }
+    },
+    {
+      "system": "notion",
+      "name": "Supply Chain Update",
+      "status": "simulated",
+      "result": {
+        "simulated": true,
+        "system": "notion",
+        "message": "[Supply Chain Update] Update project timeline and notify procurement team",
+        "retryAttempted": true,
+        "requiresApproval": true
+      }
+    },
+    {
+      "system": "github",
+      "name": "Code Deployment Alert",
+      "status": "executed",
+      "result": {
+        "simulated": false,
+        "system": "github",
+        "url": "https://github.com/Kylestew35/test/issues/1",
+        "retryAttempted": false
+      }
+    }
+  ],
+  "autopilotOps": {
+    "triage": [
+      {
+        "taskId": "task_ce8f7c43",
+        "title": "Mitigate risk: Supply Chain Disruption",
+        "status": "todo",
+        "priority": "high",
+        "score": 4,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_0d398e54",
+        "title": "Mitigate risk: Hardware/Software Incompatibility",
+        "status": "todo",
+        "priority": "high",
+        "score": 4,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_badc5348",
+        "title": "Mitigate risk: Regulatory Non-compliance",
+        "status": "todo",
+        "priority": "high",
+        "score": 4,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_c629a216",
+        "title": "Implement automation: Bug Notification",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_15b1d654",
+        "title": "Implement automation: Supply Chain Update",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_05f2565e",
+        "title": "Implement automation: Code Deployment Alert",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_1c073bc3",
+        "title": "Complete objective: Complete Bill of Materials (BOM) by end of Month 3.",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Delivery Agent"
+      },
+      {
+        "taskId": "task_0550f2e9",
+        "title": "Complete objective: Achieve working prototype with stable OS by end of Month 7.",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Delivery Agent"
+      },
+      {
+        "taskId": "task_80898b65",
+        "title": "Complete objective: Secure manufacturing partner and initial component orders by Month 9.",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Delivery Agent"
+      },
+      {
+        "taskId": "task_c2133847",
+        "title": "Complete objective: Execute pre-order campaign with target conversion rate by Month 11.",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Delivery Agent"
+      }
+    ],
+    "lastTriageAt": 1786630442,
+    "approvalMode": "warn"
+  },
+  "approvalPolicy": {
+    "mode": "warn",
+    "requiresExplicitApproval": false
+  },
+  "lastAutopilotDecisionAt": 1786630442
+}
