@@ -1053,6 +1053,16 @@
       "ts": 1786638619,
       "type": "autonomy",
       "message": "Autonomous mode enabled"
+    },
+    {
+      "ts": 1786638620,
+      "type": "github_sync",
+      "message": "Synced project to GitHub: https://github.com/Kylestew35/test/blob/main/autopilot-projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5.json"
+    },
+    {
+      "ts": 1786638665,
+      "type": "autonomy_error",
+      "message": "Autonomous review failed: Expecting value: line 1 column 1 (char 0)"
     }
   ],
   "autonomyEnabled": true,
