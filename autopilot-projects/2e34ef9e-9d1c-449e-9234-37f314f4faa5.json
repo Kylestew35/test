@@ -943,10 +943,20 @@
       "ts": 1786631377,
       "type": "standup",
       "message": "Daily standup enabled"
+    },
+    {
+      "ts": 1786631378,
+      "type": "github_sync",
+      "message": "Synced project to GitHub: https://github.com/Kylestew35/test/blob/main/autopilot-projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5.json"
+    },
+    {
+      "ts": 1786631394,
+      "type": "standup",
+      "message": "Daily standup disabled"
     }
   ],
   "autonomyEnabled": false,
-  "dailyStandupEnabled": true,
+  "dailyStandupEnabled": false,
   "integrationActions": [
     {
       "system": "jira",
