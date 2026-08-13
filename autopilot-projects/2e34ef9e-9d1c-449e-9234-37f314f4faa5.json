@@ -923,6 +923,16 @@
       "ts": 1786630919,
       "type": "autonomy",
       "message": "Autonomous mode disabled"
+    },
+    {
+      "ts": 1786630920,
+      "type": "github_sync",
+      "message": "Synced project to GitHub: https://github.com/Kylestew35/test/blob/main/autopilot-projects/2e34ef9e-9d1c-449e-9234-37f314f4faa5.json"
+    },
+    {
+      "ts": 1786630927,
+      "type": "autonomy_error",
+      "message": "Autonomous review failed: Ollama request failed: 404 Not Found - {\"error\":{\"message\":\"model 'llama3:latest' not found\",\"type\":\"not_found_error\",\"param\":null,\"code\":null}}\n"
     }
   ],
   "autonomyEnabled": false,
