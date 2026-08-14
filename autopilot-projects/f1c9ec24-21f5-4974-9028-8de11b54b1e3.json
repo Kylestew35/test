@@ -719,6 +719,16 @@
       "ts": 1786652507,
       "type": "standup",
       "message": "Daily standup digest simulated to Slack."
+    },
+    {
+      "ts": 1786652508,
+      "type": "github_sync",
+      "message": "Synced project to GitHub: https://github.com/Kylestew35/test/blob/main/autopilot-projects/f1c9ec24-21f5-4974-9028-8de11b54b1e3.json"
+    },
+    {
+      "ts": 1786667314,
+      "type": "standup_error",
+      "message": "Daily standup failed: Ollama request failed: timed out"
     }
   ],
   "autonomyEnabled": false,
