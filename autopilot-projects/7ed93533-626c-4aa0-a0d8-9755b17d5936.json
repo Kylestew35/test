@@ -501,6 +501,11 @@
       "ts": 1786673496,
       "type": "automation",
       "message": "simulated: Sync Status via notion"
+    },
+    {
+      "ts": 1786673497,
+      "type": "github_sync",
+      "message": "Project synced to GitHub: https://github.com/Kylestew35/test/blob/main/autopilot-projects/7ed93533-626c-4aa0-a0d8-9755b17d5936.json"
     }
   ],
   "autonomyEnabled": false,
@@ -528,6 +533,16 @@
         "message": "[Sync Status] Update task status to Done",
         "retryAttempted": true,
         "requiresApproval": true
+      }
+    },
+    {
+      "system": "github",
+      "name": "Project Sync",
+      "status": "executed",
+      "result": {
+        "simulated": false,
+        "system": "github",
+        "url": "https://github.com/Kylestew35/test/blob/main/autopilot-projects/7ed93533-626c-4aa0-a0d8-9755b17d5936.json"
       }
     }
   ],
