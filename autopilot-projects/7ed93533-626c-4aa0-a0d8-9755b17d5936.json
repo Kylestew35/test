@@ -1,0 +1,609 @@
+{
+  "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+  "projectName": "test ",
+  "description": "just make a simple test project low output",
+  "timestamp": 1786673496,
+  "interpreter": {
+    "projectName": "test ",
+    "description": "just make a simple test project low output",
+    "goals": [
+      "Validate JSON schema integrity",
+      "Verify automation trigger logic"
+    ],
+    "phases": [
+      {
+        "name": "Setup",
+        "summary": "Initial environment configuration.",
+        "workstreams": [
+          {
+            "name": "Infrastructure",
+            "summary": "Provisioning test servers."
+          }
+        ]
+      },
+      {
+        "name": "Execution",
+        "summary": "Running the primary test suite.",
+        "workstreams": [
+          {
+            "name": "Testing",
+            "summary": "Executing automated scripts."
+          }
+        ]
+      }
+    ],
+    "risks": [
+      {
+        "name": "Data Mismatch",
+        "impact": "High",
+        "mitigation": "Implement strict schema validation."
+      },
+      {
+        "name": "System Downtime",
+        "impact": "Medium",
+        "mitigation": "Configure redundant failover nodes."
+      }
+    ],
+    "automations": [
+      {
+        "id": "at1",
+        "name": "Alert Devs",
+        "system": "slack",
+        "trigger": "New bug created in Jira",
+        "action": "Post notification to #alerts"
+      },
+      {
+        "id": "at2",
+        "name": "Sync Status",
+        "system": "notion",
+        "trigger": "GitHub PR merged",
+        "action": "Update task status to Done"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "tl1",
+        "name": "Phase 1 Run",
+        "phase": "Setup",
+        "start": "2023-12-01",
+        "end": "2023-12-05"
+      },
+      {
+        "id": "tl2",
+        "name": "Phase 2 Run",
+        "phase": "Execution",
+        "start": "2023-12-06",
+        "end": "2023-12-15"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "ob1",
+        "description": "Complete all automated tests without errors."
+      },
+      {
+        "id": "ob2",
+        "description": "Ensure 100% automation coverage for triggers."
+      }
+    ]
+  },
+  "rawPlan": {
+    "projectName": "test ",
+    "description": "just make a simple test project low output",
+    "goals": [
+      "Validate JSON schema integrity",
+      "Verify automation trigger logic"
+    ],
+    "phases": [
+      {
+        "name": "Setup",
+        "summary": "Initial environment configuration.",
+        "workstreams": [
+          {
+            "name": "Infrastructure",
+            "summary": "Provisioning test servers."
+          }
+        ]
+      },
+      {
+        "name": "Execution",
+        "summary": "Running the primary test suite.",
+        "workstreams": [
+          {
+            "name": "Testing",
+            "summary": "Executing automated scripts."
+          }
+        ]
+      }
+    ],
+    "risks": [
+      {
+        "name": "Data Mismatch",
+        "impact": "High",
+        "mitigation": "Implement strict schema validation."
+      },
+      {
+        "name": "System Downtime",
+        "impact": "Medium",
+        "mitigation": "Configure redundant failover nodes."
+      }
+    ],
+    "automations": [
+      {
+        "id": "at1",
+        "name": "Alert Devs",
+        "system": "slack",
+        "trigger": "New bug created in Jira",
+        "action": "Post notification to #alerts"
+      },
+      {
+        "id": "at2",
+        "name": "Sync Status",
+        "system": "notion",
+        "trigger": "GitHub PR merged",
+        "action": "Update task status to Done"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "tl1",
+        "name": "Phase 1 Run",
+        "phase": "Setup",
+        "start": "2023-12-01",
+        "end": "2023-12-05"
+      },
+      {
+        "id": "tl2",
+        "name": "Phase 2 Run",
+        "phase": "Execution",
+        "start": "2023-12-06",
+        "end": "2023-12-15"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "ob1",
+        "description": "Complete all automated tests without errors."
+      },
+      {
+        "id": "ob2",
+        "description": "Ensure 100% automation coverage for triggers."
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "taskId": "task_18a69827",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "system": "slack",
+      "type": "automation",
+      "title": "Implement automation: Alert Devs",
+      "createdAt": "2026-08-14T02:06:53Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Automation",
+        "workstream": "Alert Devs",
+        "summary": "Post notification to #alerts"
+      },
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_ccc01d79",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "system": "notion",
+      "type": "automation",
+      "title": "Implement automation: Sync Status",
+      "createdAt": "2026-08-14T02:06:53Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Automation",
+        "workstream": "Sync Status",
+        "summary": "Update task status to Done"
+      },
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_33b3ea98",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "system": "task",
+      "type": "objective",
+      "title": "Complete objective: Complete all automated tests without errors.",
+      "createdAt": "2026-08-14T02:06:53Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Objectives",
+        "workstream": "Complete all automated tests without errors.",
+        "summary": "Complete all automated tests without errors."
+      },
+      "priority": "high",
+      "assignee": "Delivery Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_b1a363ed",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "system": "task",
+      "type": "objective",
+      "title": "Complete objective: Ensure 100% automation coverage for triggers.",
+      "createdAt": "2026-08-14T02:06:53Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Objectives",
+        "workstream": "Ensure 100% automation coverage for triggers.",
+        "summary": "Ensure 100% automation coverage for triggers."
+      },
+      "priority": "high",
+      "assignee": "Delivery Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_f2ea0294",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "system": "internal",
+      "type": "risk_mitigation",
+      "title": "Mitigate risk: Data Mismatch",
+      "createdAt": "2026-08-14T02:11:36Z",
+      "status": "generated",
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "payload": {
+        "phase": "Risk Management",
+        "workstream": "Mitigation",
+        "summary": "Implement strict schema validation."
+      },
+      "requiresApproval": false
+    },
+    {
+      "taskId": "task_5b63ebaa",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "system": "internal",
+      "type": "risk_mitigation",
+      "title": "Mitigate risk: System Downtime",
+      "createdAt": "2026-08-14T02:11:36Z",
+      "status": "generated",
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "payload": {
+        "phase": "Risk Management",
+        "workstream": "Mitigation",
+        "summary": "Configure redundant failover nodes."
+      },
+      "requiresApproval": false
+    },
+    {
+      "taskId": "task_08cb1c8f",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Setup: Infrastructure",
+      "createdAt": "2026-08-14T02:06:53Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Setup",
+        "workstream": "Infrastructure",
+        "summary": "Provisioning test servers."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_9c4ce31c",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Execution: Testing",
+      "createdAt": "2026-08-14T02:06:53Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Execution",
+        "workstream": "Testing",
+        "summary": "Executing automated scripts."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    }
+  ],
+  "documents": [
+    {
+      "docId": "doc_a4ec741b",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "docType": "Project Brief",
+      "content": "PROJECT BRIEF: test\n\nMISSION\nTo execute a controlled, low-output validation test designed to verify JSON schema integrity and ensure the reliability of automated trigger logic within the testing environment.\n\nSCOPE\nThe project includes the initial setup of infrastructure through server provisioning, followed by the execution of an automated testing suite. The scope extends to the implementation and verification of automated workflows between Jira, Slack, GitHub, and Notion.\n\nGOALS\n- Validate JSON schema integrity.\n- Verify automation trigger logic accuracy.\n- Complete all automated tests with zero errors.\n- Achieve 100% automation coverage for all defined triggers.\n\nCONSTRAINTS AND RISKS\n- Data Integrity: High risk of data mismatch; requires strict adherence to schema validation protocols.\n- System Availability: Medium risk of downtime; necessitates the use of redundant failover nodes.\n- Timeline: All activities must be completed within the window of December 1, 2023, to December 15, 2023.",
+      "url": "https://localhost:8000/projects/7ed93533-626c-4aa0-a0d8-9755b17d5936/documents/project-brief",
+      "createdAt": 1786673234
+    },
+    {
+      "docId": "doc_1286c4d2",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "docType": "Execution Plan",
+      "content": "EXECUTION PLAN: test\n\nPROJECT OBJECTIVES\n- Complete all automated tests without errors.\n- Ensure 100% automation coverage for triggers.\n\nPHASE 1: SETUP\nTimeline: 2023-12-01 to 2023-12-05\nFocus: Infrastructure Provisioning\nOwner: DevOps Engineer\nActivities: Provision test servers and configure the initial environment.\nMilestone: Environment Readiness (Infrastructure fully provisioned and accessible).\n\nPHASE 2: EXECUTION\nTimeline: 2023-12-06 to 2023-12-15\nFocus: Automated Testing\nOwner: QA Engineer\nActivities: Execute automated scripts, validate JSON schema integrity, and verify automation trigger logic (Slack/Notion).\nMilestone: Test Completion (All scripts executed with zero errors and verified triggers).\n\nEXECUTION SEQUENCE\n1. Infrastructure Provisioning: Complete server setup as the prerequisite for all testing.\n2. Risk Mitigation Setup: Implement strict schema validation and configure redundant failover nodes during the setup window.\n3. Automated Script Execution: Run primary test suite against the provisioned environment.\n4. Trigger Verification: Monitor Slack alerts and Notion status updates to confirm automation logic integrity.\n\nCRITICAL RISK CONTROLS\n- Data Mismatch: Enforce strict schema validation protocols.\n- System Downtime: Ensure redundant failover nodes are active during the execution phase.",
+      "url": "https://localhost:8000/projects/7ed93533-626c-4aa0-a0d8-9755b17d5936/documents/execution-plan",
+      "createdAt": 1786673277
+    },
+    {
+      "docId": "doc_af104fd8",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "docType": "Risk Log",
+      "content": "RISK LOG - Project: test\n\nIDENTIFIED RISKS\n- Data Mismatch [Impact: High]: Implement strict schema validation.\n- System Downtime [Impact: Medium]: Configure redundant failover nodes.\n\nDEPENDENCIES\n- Infrastructure Readiness: Completion of server provisioning is required to initiate the Execution phase.\n- Integration Connectivity: Availability of Jira and GitHub APIs to enable Slack and Notion automation triggers.\n- Timeline Adherence: Successful completion of the Setup phase by 2023-12-05 to allow for scheduled execution.\n\nPOTENTIAL BLOCKERS\n- Provisioning Failure: Inability to configure test servers will prevent the start of the Execution phase.\n- Automation Disruption: Lack of access to Slack or Notion APIs will block automated alerting and status syncing.\n- Schema Integrity Error: Critical failures in JSON structure that prevent the validation testing suite from running.",
+      "url": "https://localhost:8000/projects/7ed93533-626c-4aa0-a0d8-9755b17d5936/documents/risk-log",
+      "createdAt": 1786673327
+    },
+    {
+      "docId": "doc_c88d6132",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "docType": "Stakeholder Summary",
+      "content": "STAKEHOLDER SUMMARY: Project test\n\nKEY STAKEHOLDERS\n- Infrastructure Team: Responsible for server provisioning and environment setup.\n- QA/Testing Team: Responsible for executing automated scripts and validating schema integrity.\n- Development Team: Primary responders to bug alerts and technical oversight.\n- Project Leads: Oversight of automation coverage and final objective validation.\n\nCRITICAL DECISIONS REQUIRED\n- Schema Validation Protocol: Approval of strict validation rules to mitigate high-impact data mismatch risks.\n- Redundancy Strategy: Confirmation of failover node configurations to address potential system downtime.\n- Completion Sign-off: Final verification that 100% automation coverage and error-free testing objectives have been met.\n\nCOMMUNICATION PLAN\n- Bug Notifications: Real-time alerts sent to the #alerts Slack channel via Jira integration.\n- Status Tracking: Automated task updates in Notion triggered by GitHub PR merges.\n- Milestone Reporting: Updates provided at the conclusion of the Setup phase (Dec 5) and Execution phase (Dec 15).",
+      "url": "https://localhost:8000/projects/7ed93533-626c-4aa0-a0d8-9755b17d5936/documents/stakeholder-summary",
+      "createdAt": 1786673352
+    },
+    {
+      "docId": "doc_30be096f",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "docType": "Action Register",
+      "content": "ACTION REGISTER: Project test\n\nID | Task Description | Priority | Assignee | Next Action\n--------------------------------------------------------------------------------\n01 | Provision test servers (Infrastructure) | High | DevOps | Finalize server specifications and initiate provisioning.\n02 | Implement strict schema validation logic | High | QA/Dev | Define JSON schema validation rules to prevent data mismatch.\n03 | Configure redundant failover nodes | Medium | DevOps | Design and implement failover architecture for system stability.\n04 | Set up Slack automation (at1) | Low | Dev | Integrate Jira bug creation trigger with #alerts channel.\n05 | Set up Notion status sync (at2) | Low | Dev | Configure GitHub PR merge trigger to update task status.\n06 | Execute primary automated test suite | High | QA | Prepare and validate scripts for Phase 2 execution.",
+      "url": "https://localhost:8000/projects/7ed93533-626c-4aa0-a0d8-9755b17d5936/documents/action-register",
+      "createdAt": 1786673379
+    },
+    {
+      "docId": "doc_93f27738",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "docType": "Sprint Checklist",
+      "content": "SPRINT CHECKLIST: PROJECT TEST\n\nPRE-SPRINT SETUP (PHASE 1)\n[ ] Provision test servers for Infrastructure workstream.\n[ ] Configure redundant failover nodes to mitigate system downtime risk.\n[ ] Implement strict JSON schema validation logic to prevent data mismatch.\n[ ] Verify Slack automation (at1) triggers on Jira bug creation in #alerts.\n[ ] Verify Notion automation (at2) updates task status upon GitHub PR merge.\n\nEXECUTION & TESTING (PHASE 2)\n[ ] Deploy automated scripts for the Testing workstream.\n[ ] Run primary test suite to validate JSON schema integrity.\n[ ] Execute trigger logic tests to ensure 100% automation coverage.\n[ ] Monitor system stability during script execution.\n\nHANDOFFS & REVIEW POINTS\n[ ] Handoff: Complete Infrastructure provisioning before Dec 6 transition.\n[ ] Review: Validate all automated tests completed without errors (Obj ob1).\n[ ] Review: Audit automation triggers to confirm successful Slack/Notion updates.\n[ ] Review: Confirm schema validation protocols are effectively preventing mismatches.",
+      "url": "https://localhost:8000/projects/7ed93533-626c-4aa0-a0d8-9755b17d5936/documents/sprint-checklist",
+      "createdAt": 1786673421
+    },
+    {
+      "docId": "doc_d05213e6",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "docType": "Technical Specs",
+      "content": "TECHNICAL SPECIFICATIONS: PROJECT TEST\n\nSYSTEM ARCHITECTURE\nThe infrastructure requires the provisioning of dedicated test servers configured with redundant failover nodes to mitigate system downtime risks. The environment must support isolated execution for automated testing scripts.\n\nDATA INTEGRITY & VALIDATION\nA strict JSON schema validation engine will be implemented to prevent data mismatch errors. This component will intercept all incoming payloads during the Execution phase to verify structural integrity against predefined schemas.\n\nAUTOMATION INTEGRATION DETAILS\n\n1. Incident Alerting (Slack)\n- Trigger: Jira Bug Creation event.\n- Integration: Webhook-based listener connecting Jira API to Slack API.\n- Action: Automated payload delivery and notification posting to the #alerts channel.\n\n2. Workflow Synchronization (Notion)\n- Trigger: GitHub Pull Request (PR) Merge event.\n- Integration: GitHub Webhooks/Actions connected to Notion API.\n- Action: Programmatic update of task status to \"Done\" within the Notion database.\n\nTESTING & EXECUTION FRAMEWORK\nThe testing suite will consist of automated scripts designed for 100% coverage of all defined automation triggers (at1, at2). The primary technical objective is error-free execution and verification of schema constraints across all workstreams.\n\nDEPLOYMENT SCHEDULE\n- Setup Phase: 2023-12-01 to 2023-12-05 (Infrastructure provisioning and environment configuration).\n- Execution Phase: 2023-12-06 to 2023-12-15 (Automated test suite deployment and validation).",
+      "url": "https://localhost:8000/projects/7ed93533-626c-4aa0-a0d8-9755b17d5936/documents/technical-specs",
+      "createdAt": 1786673468
+    },
+    {
+      "docId": "doc_0a3fa3d0",
+      "projectId": "7ed93533-626c-4aa0-a0d8-9755b17d5936",
+      "docType": "Release Readiness Report",
+      "content": "RELEASE READINESS REPORT: test\n\nPROJECT OVERVIEW\nGoal: Validate JSON schema integrity and verify automation trigger logic.\n\nCOMPLETION CRITERIA\n- Execution Phase Completion: All automated scripts must run to completion with zero recorded errors.\n- Infrastructure Verification: Test server provisioning must be confirmed as stable and operational.\n- Automation Coverage: 100% of defined triggers (at1, at2) must be verified as functional.\n- Objective Alignment: Successful validation of JSON schema integrity across all test datasets.\n\nQUALITY ASSURANCE CHECKS\n- Schema Validation: Perform strict integrity checks on all JSON inputs to mitigate Data Mismatch risks.\n- Redundancy Audit: Verify failover node configuration to ensure mitigation against System Downtime.\n- Trigger Logic Test: Confirm Slack notifications trigger correctly on Jira bug creation and Notion status updates sync correctly upon GitHub PR merges.\n- Environment Check: Validate that the Setup phase infrastructure meets all requirements for the Execution phase.\n\nLAUNCH READINESS SUMMARY\n- Current Status: Pending (Awaiting completion of Phase 2)\n- Critical Risk Level: High (Focus required on schema validation implementation)\n- Target Readiness Date: Post 2023-12-15",
+      "url": "https://localhost:8000/projects/7ed93533-626c-4aa0-a0d8-9755b17d5936/documents/release-readiness-report",
+      "createdAt": 1786673496
+    }
+  ],
+  "dashboard": {
+    "generatedAt": 1786673496,
+    "summary": {
+      "objectives": 2,
+      "milestones": 2,
+      "risks": 2,
+      "phases": 2,
+      "automations": 2
+    },
+    "kpis": {
+      "objectiveCount": 2,
+      "milestoneCount": 2,
+      "riskCount": 2,
+      "phaseCount": 2,
+      "automationCount": 2,
+      "highRiskCount": 1
+    },
+    "forecast": {
+      "status": "needs_attention",
+      "confidence": 0.75
+    },
+    "alerts": [
+      {
+        "type": "risk",
+        "severity": "high",
+        "message": "High-impact risk detected: Data Mismatch"
+      }
+    ],
+    "rawPlan": {
+      "projectName": "test ",
+      "description": "just make a simple test project low output",
+      "goals": [
+        "Validate JSON schema integrity",
+        "Verify automation trigger logic"
+      ],
+      "phases": [
+        {
+          "name": "Setup",
+          "summary": "Initial environment configuration.",
+          "workstreams": [
+            {
+              "name": "Infrastructure",
+              "summary": "Provisioning test servers."
+            }
+          ]
+        },
+        {
+          "name": "Execution",
+          "summary": "Running the primary test suite.",
+          "workstreams": [
+            {
+              "name": "Testing",
+              "summary": "Executing automated scripts."
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "name": "Data Mismatch",
+          "impact": "High",
+          "mitigation": "Implement strict schema validation."
+        },
+        {
+          "name": "System Downtime",
+          "impact": "Medium",
+          "mitigation": "Configure redundant failover nodes."
+        }
+      ],
+      "automations": [
+        {
+          "id": "at1",
+          "name": "Alert Devs",
+          "system": "slack",
+          "trigger": "New bug created in Jira",
+          "action": "Post notification to #alerts"
+        },
+        {
+          "id": "at2",
+          "name": "Sync Status",
+          "system": "notion",
+          "trigger": "GitHub PR merged",
+          "action": "Update task status to Done"
+        }
+      ],
+      "timeline": [
+        {
+          "id": "tl1",
+          "name": "Phase 1 Run",
+          "phase": "Setup",
+          "start": "2023-12-01",
+          "end": "2023-12-05"
+        },
+        {
+          "id": "tl2",
+          "name": "Phase 2 Run",
+          "phase": "Execution",
+          "start": "2023-12-06",
+          "end": "2023-12-15"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "ob1",
+          "description": "Complete all automated tests without errors."
+        },
+        {
+          "id": "ob2",
+          "description": "Ensure 100% automation coverage for triggers."
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "ts": 1786673496,
+      "type": "created",
+      "message": "Project created."
+    },
+    {
+      "ts": 1786673496,
+      "type": "automation",
+      "message": "simulated: Alert Devs via slack"
+    },
+    {
+      "ts": 1786673496,
+      "type": "automation",
+      "message": "simulated: Sync Status via notion"
+    }
+  ],
+  "autonomyEnabled": false,
+  "dailyStandupEnabled": false,
+  "integrationActions": [
+    {
+      "system": "slack",
+      "name": "Alert Devs",
+      "status": "simulated",
+      "result": {
+        "simulated": true,
+        "system": "slack",
+        "message": "[Alert Devs] Post notification to #alerts",
+        "retryAttempted": true,
+        "requiresApproval": true
+      }
+    },
+    {
+      "system": "notion",
+      "name": "Sync Status",
+      "status": "simulated",
+      "result": {
+        "simulated": true,
+        "system": "notion",
+        "message": "[Sync Status] Update task status to Done",
+        "retryAttempted": true,
+        "requiresApproval": true
+      }
+    }
+  ],
+  "autopilotOps": {
+    "triage": [
+      {
+        "taskId": "task_f2ea0294",
+        "title": "Mitigate risk: Data Mismatch",
+        "status": "todo",
+        "priority": "high",
+        "score": 4,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_5b63ebaa",
+        "title": "Mitigate risk: System Downtime",
+        "status": "todo",
+        "priority": "high",
+        "score": 4,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_18a69827",
+        "title": "Implement automation: Alert Devs",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_ccc01d79",
+        "title": "Implement automation: Sync Status",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_33b3ea98",
+        "title": "Complete objective: Complete all automated tests without errors.",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Delivery Agent"
+      },
+      {
+        "taskId": "task_b1a363ed",
+        "title": "Complete objective: Ensure 100% automation coverage for triggers.",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Delivery Agent"
+      },
+      {
+        "taskId": "task_08cb1c8f",
+        "title": "Setup: Infrastructure",
+        "status": "todo",
+        "priority": "medium",
+        "score": 0,
+        "assignee": "Delivery Agent"
+      },
+      {
+        "taskId": "task_9c4ce31c",
+        "title": "Execution: Testing",
+        "status": "todo",
+        "priority": "medium",
+        "score": 0,
+        "assignee": "Delivery Agent"
+      }
+    ],
+    "lastTriageAt": 1786673496,
+    "approvalMode": "warn"
+  },
+  "approvalPolicy": {
+    "mode": "warn",
+    "requiresExplicitApproval": false
+  },
+  "lastAutopilotDecisionAt": 1786673496
+}
