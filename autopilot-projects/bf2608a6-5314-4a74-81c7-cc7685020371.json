@@ -1,0 +1,876 @@
+{
+  "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+  "projectName": "another beef",
+  "description": "make me a test for a new bef company",
+  "timestamp": 1786674911,
+  "interpreter": {
+    "projectName": "another beef",
+    "description": "Market testing and pilot launch for a new premium beef brand to validate product quality, pricing, and supply chain logistics.",
+    "goals": [
+      "Validate product-market fit through direct-to-consumer sales",
+      "Establish a reliable local supply chain with certified butchers",
+      "Test consumer response to premium branding and packaging",
+      "Determine optimal price points for different cuts"
+    ],
+    "phases": [
+      {
+        "name": "Research & Sourcing",
+        "summary": "Identify suppliers and finalize product offerings.",
+        "workstreams": [
+          {
+            "name": "Supply Chain",
+            "summary": "Vetting local farms and establishing butcher partnerships."
+          },
+          {
+            "name": "Branding",
+            "summary": "Developing logo, packaging design, and brand voice."
+          }
+        ]
+      },
+      {
+        "name": "Pilot Launch",
+        "summary": "Execute a 60-day limited sales window.",
+        "workstreams": [
+          {
+            "name": "Logistics",
+            "summary": "Setting up temperature-controlled delivery and storage."
+          },
+          {
+            "name": "Marketing",
+            "summary": "Running targeted social media ads and sampling campaigns."
+          }
+        ]
+      },
+      {
+        "name": "Evaluation",
+        "summary": "Analyze sales data and customer feedback for scaling.",
+        "workstreams": [
+          {
+            "name": "Data Analysis",
+            "summary": "Reviewing churn, repeat purchase rate, and margins."
+          }
+        ]
+      }
+    ],
+    "risks": [
+      {
+        "name": "Supply Chain Disruption",
+        "impact": "High",
+        "mitigation": "Onboard secondary suppliers in different regions."
+      },
+      {
+        "name": "Perishable Spoilage",
+        "impact": "High",
+        "mitigation": "Implement strict cold-chain monitoring and IoT sensors."
+      },
+      {
+        "name": "Low Market Adoption",
+        "impact": "Medium",
+        "mitigation": "Iterate on pricing and packaging based on pilot feedback."
+      }
+    ],
+    "automations": [
+      {
+        "id": "slk_01",
+        "name": "Order Alert",
+        "system": "slack",
+        "trigger": "New order placed in Shopify",
+        "action": "Post notification to #sales-team channel"
+      },
+      {
+        "id": "jt_01",
+        "name": "Feedback Tasking",
+        "system": "jira",
+        "trigger": "Negative customer feedback received",
+        "action": "Create high-priority issue in Product Backlog"
+      },
+      {
+        "id": "nt_01",
+        "name": "Inventory Sync",
+        "system": "notion",
+        "trigger": "Stock level falls below 20%",
+        "action": "Update Inventory Tracker database"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "t_01",
+        "name": "Sourcing Phase",
+        "phase": "Research & Sourcing",
+        "start": "2024-06-01",
+        "end": "2024-07-15"
+      },
+      {
+        "id": "t_02",
+        "name": "Pilot Execution",
+        "phase": "Pilot Launch",
+        "start": "2024-07-16",
+        "end": "2024-09-15"
+      },
+      {
+        "id": "t_03",
+        "name": "Post-Mortem Analysis",
+        "phase": "Evaluation",
+        "start": "2024-09-16",
+        "end": "2024-10-15"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj_01",
+        "description": "Achieve 500 successful deliveries during the pilot period."
+      },
+      {
+        "id": "obj_02",
+        "description": "Maintain a customer satisfaction score (CSAT) of 4.5/5."
+      },
+      {
+        "id": "obj_03",
+        "description": "Keep product spoilage rate below 2%."
+      }
+    ]
+  },
+  "rawPlan": {
+    "projectName": "another beef",
+    "description": "Market testing and pilot launch for a new premium beef brand to validate product quality, pricing, and supply chain logistics.",
+    "goals": [
+      "Validate product-market fit through direct-to-consumer sales",
+      "Establish a reliable local supply chain with certified butchers",
+      "Test consumer response to premium branding and packaging",
+      "Determine optimal price points for different cuts"
+    ],
+    "phases": [
+      {
+        "name": "Research & Sourcing",
+        "summary": "Identify suppliers and finalize product offerings.",
+        "workstreams": [
+          {
+            "name": "Supply Chain",
+            "summary": "Vetting local farms and establishing butcher partnerships."
+          },
+          {
+            "name": "Branding",
+            "summary": "Developing logo, packaging design, and brand voice."
+          }
+        ]
+      },
+      {
+        "name": "Pilot Launch",
+        "summary": "Execute a 60-day limited sales window.",
+        "workstreams": [
+          {
+            "name": "Logistics",
+            "summary": "Setting up temperature-controlled delivery and storage."
+          },
+          {
+            "name": "Marketing",
+            "summary": "Running targeted social media ads and sampling campaigns."
+          }
+        ]
+      },
+      {
+        "name": "Evaluation",
+        "summary": "Analyze sales data and customer feedback for scaling.",
+        "workstreams": [
+          {
+            "name": "Data Analysis",
+            "summary": "Reviewing churn, repeat purchase rate, and margins."
+          }
+        ]
+      }
+    ],
+    "risks": [
+      {
+        "name": "Supply Chain Disruption",
+        "impact": "High",
+        "mitigation": "Onboard secondary suppliers in different regions."
+      },
+      {
+        "name": "Perishable Spoilage",
+        "impact": "High",
+        "mitigation": "Implement strict cold-chain monitoring and IoT sensors."
+      },
+      {
+        "name": "Low Market Adoption",
+        "impact": "Medium",
+        "mitigation": "Iterate on pricing and packaging based on pilot feedback."
+      }
+    ],
+    "automations": [
+      {
+        "id": "slk_01",
+        "name": "Order Alert",
+        "system": "slack",
+        "trigger": "New order placed in Shopify",
+        "action": "Post notification to #sales-team channel"
+      },
+      {
+        "id": "jt_01",
+        "name": "Feedback Tasking",
+        "system": "jira",
+        "trigger": "Negative customer feedback received",
+        "action": "Create high-priority issue in Product Backlog"
+      },
+      {
+        "id": "nt_01",
+        "name": "Inventory Sync",
+        "system": "notion",
+        "trigger": "Stock level falls below 20%",
+        "action": "Update Inventory Tracker database"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "t_01",
+        "name": "Sourcing Phase",
+        "phase": "Research & Sourcing",
+        "start": "2024-06-01",
+        "end": "2024-07-15"
+      },
+      {
+        "id": "t_02",
+        "name": "Pilot Execution",
+        "phase": "Pilot Launch",
+        "start": "2024-07-16",
+        "end": "2024-09-15"
+      },
+      {
+        "id": "t_03",
+        "name": "Post-Mortem Analysis",
+        "phase": "Evaluation",
+        "start": "2024-09-16",
+        "end": "2024-10-15"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj_01",
+        "description": "Achieve 500 successful deliveries during the pilot period."
+      },
+      {
+        "id": "obj_02",
+        "description": "Maintain a customer satisfaction score (CSAT) of 4.5/5."
+      },
+      {
+        "id": "obj_03",
+        "description": "Keep product spoilage rate below 2%."
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "taskId": "task_5918d915",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "slack",
+      "type": "automation",
+      "title": "Implement automation: Order Alert",
+      "createdAt": "2026-08-14T02:29:51Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Automation",
+        "workstream": "Order Alert",
+        "summary": "Post notification to #sales-team channel"
+      },
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_19b0e605",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "jira",
+      "type": "automation",
+      "title": "Implement automation: Feedback Tasking",
+      "createdAt": "2026-08-14T02:29:51Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Automation",
+        "workstream": "Feedback Tasking",
+        "summary": "Create high-priority issue in Product Backlog"
+      },
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_f11fbfdc",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "notion",
+      "type": "automation",
+      "title": "Implement automation: Inventory Sync",
+      "createdAt": "2026-08-14T02:29:51Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Automation",
+        "workstream": "Inventory Sync",
+        "summary": "Update Inventory Tracker database"
+      },
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_5bb753b9",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "task",
+      "type": "objective",
+      "title": "Complete objective: Achieve 500 successful deliveries during the pilot period.",
+      "createdAt": "2026-08-14T02:29:51Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Objectives",
+        "workstream": "Achieve 500 successful deliveries during the pilot period.",
+        "summary": "Achieve 500 successful deliveries during the pilot period."
+      },
+      "priority": "high",
+      "assignee": "Delivery Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_9b9362d5",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "task",
+      "type": "objective",
+      "title": "Complete objective: Maintain a customer satisfaction score (CSAT) of 4.5/5.",
+      "createdAt": "2026-08-14T02:29:51Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Objectives",
+        "workstream": "Maintain a customer satisfaction score (CSAT) of 4.5/5.",
+        "summary": "Maintain a customer satisfaction score (CSAT) of 4.5/5."
+      },
+      "priority": "high",
+      "assignee": "Delivery Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_fdb7de78",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "task",
+      "type": "objective",
+      "title": "Complete objective: Keep product spoilage rate below 2%.",
+      "createdAt": "2026-08-14T02:29:51Z",
+      "status": "planned",
+      "payload": {
+        "phase": "Objectives",
+        "workstream": "Keep product spoilage rate below 2%.",
+        "summary": "Keep product spoilage rate below 2%."
+      },
+      "priority": "high",
+      "assignee": "Delivery Agent",
+      "requiresApproval": true
+    },
+    {
+      "taskId": "task_9045651d",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "internal",
+      "type": "risk_mitigation",
+      "title": "Mitigate risk: Supply Chain Disruption",
+      "createdAt": "2026-08-14T02:35:11Z",
+      "status": "generated",
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "payload": {
+        "phase": "Risk Management",
+        "workstream": "Mitigation",
+        "summary": "Onboard secondary suppliers in different regions."
+      },
+      "requiresApproval": false
+    },
+    {
+      "taskId": "task_81b0ec3a",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "internal",
+      "type": "risk_mitigation",
+      "title": "Mitigate risk: Perishable Spoilage",
+      "createdAt": "2026-08-14T02:35:11Z",
+      "status": "generated",
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "payload": {
+        "phase": "Risk Management",
+        "workstream": "Mitigation",
+        "summary": "Implement strict cold-chain monitoring and IoT sensors."
+      },
+      "requiresApproval": false
+    },
+    {
+      "taskId": "task_4464496c",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "internal",
+      "type": "risk_mitigation",
+      "title": "Mitigate risk: Low Market Adoption",
+      "createdAt": "2026-08-14T02:35:11Z",
+      "status": "generated",
+      "priority": "high",
+      "assignee": "Automation Agent",
+      "payload": {
+        "phase": "Risk Management",
+        "workstream": "Mitigation",
+        "summary": "Iterate on pricing and packaging based on pilot feedback."
+      },
+      "requiresApproval": false
+    },
+    {
+      "taskId": "task_faa7c6bb",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Research & Sourcing: Supply Chain",
+      "createdAt": "2026-08-14T02:29:51Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Research & Sourcing",
+        "workstream": "Supply Chain",
+        "summary": "Vetting local farms and establishing butcher partnerships."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_2a97a671",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Research & Sourcing: Branding",
+      "createdAt": "2026-08-14T02:29:51Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Research & Sourcing",
+        "workstream": "Branding",
+        "summary": "Developing logo, packaging design, and brand voice."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_c2836704",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Pilot Launch: Logistics",
+      "createdAt": "2026-08-14T02:29:51Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Pilot Launch",
+        "workstream": "Logistics",
+        "summary": "Setting up temperature-controlled delivery and storage."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_88189f5b",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Pilot Launch: Marketing",
+      "createdAt": "2026-08-14T02:29:51Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Pilot Launch",
+        "workstream": "Marketing",
+        "summary": "Running targeted social media ads and sampling campaigns."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    },
+    {
+      "taskId": "task_4c190e2c",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "system": "jira",
+      "type": "workstream",
+      "title": "Evaluation: Data Analysis",
+      "createdAt": "2026-08-14T02:29:51Z",
+      "status": "generated",
+      "payload": {
+        "phase": "Evaluation",
+        "workstream": "Data Analysis",
+        "summary": "Reviewing churn, repeat purchase rate, and margins."
+      },
+      "priority": "medium",
+      "assignee": "Delivery Agent"
+    }
+  ],
+  "documents": [
+    {
+      "docId": "doc_d4946422",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "docType": "Project Brief",
+      "content": "PROJECT BRIEF: another beef\n\nMISSION\nTo execute a market-testing pilot for a new premium beef brand to validate product quality, pricing models, and supply chain viability through direct-to-consumer sales.\n\nSCOPE\nThe project encompasses the end-to-end lifecycle of a 60-day pilot launch, including:\n- Research & Sourcing: Vetting local farms, establishing butcher partnerships, and developing brand identity (logo, packaging, and voice).\n- Pilot Execution: Implementing temperature-controlled logistics/storage and executing targeted social media marketing and sampling campaigns.\n- Evaluation: Analyzing sales data, customer feedback, churn rates, and profit margins to determine scalability.\n\nGOALS\n- Validate product-market fit through direct-to-consumer sales.\n- Establish a reliable local supply chain with certified butcher partners.\n- Achieve 500 successful deliveries during the pilot period.\n- Maintain a customer satisfaction score (CSAT) of 4.5/5.\n- Determine optimal price points for various product cuts.\n\nCONSTRAINTS\n- Timeline: All phases, from sourcing to post-mortem analysis, must be completed between June 1, 2024, and October 15, 2024.\n- Quality Control: Product spoilage rates must be strictly maintained below 2%.\n- Logistics: Operations are limited by the requirement for continuous temperature-controlled delivery and storage (cold-chain integrity).\n- Supply Chain: Success is dependent on the availability of local certified suppliers; disruption in the local farming/butcher network poses a high risk to operations.",
+      "url": "https://localhost:8000/projects/bf2608a6-5314-4a74-81c7-cc7685020371/documents/project-brief",
+      "createdAt": 1786674622
+    },
+    {
+      "docId": "doc_e8eebe17",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "docType": "Execution Plan",
+      "content": "EXECUTION PLAN: ANOTHER BEEF\n\nPROJECT OVERVIEW\nA 5-month pilot program designed to validate product quality, pricing models, and supply chain logistics for a new premium beef brand through direct-to-consumer sales.\n\nPHASE 1: RESEARCH AND SOURCING\nTimeline: June 01, 2024 - July 15, 2024\nOwners: Operations Lead (Supply Chain), Creative Lead (Branding)\nKey Activities:\n- Identify and vet local farms and establish partnerships with certified butchers.\n- Finalize brand identity, including logo design, packaging, and brand voice.\nMilestone: Supplier contracts executed and brand assets ready for production.\n\nPHASE 2: PILOT LAUNCH\nTimeline: July 16, 2024 - September 15, 2024\nOwners: Logistics Coordinator (Logistics), Marketing Manager (Marketing)\nKey Activities:\n- Implement temperature-controlled storage and delivery infrastructure.\n- Execute targeted social media advertising and local sampling campaigns.\n- Monitor real-time inventory levels via automated tracking systems.\nMilestone: Completion of 500 successful deliveries with a spoilage rate below 2% and a CSAT score of 4.5/5.\n\nPHASE 3: EVALUATION\nTimeline: September 16, 2024 - October 15, 2024\nOwner: Project Lead (Data Analysis)\nKey Activities:\n- Analyze sales data, focusing on churn, repeat purchase rates, and margins.\n- Review customer feedback trends and high-priority issues logged in Jira.\nMilestone: Delivery of final post-mortem report and approved scaling strategy.\n\nSEQUENCING SUMMARY\nThe project follows a strict linear dependency: \n1. Foundation (Phase 1) must be completed to secure product and identity.\n2. Execution (Phase 2) utilizes the established supply chain for market testing.\n3. Optimization (Phase 3) uses pilot data to refine the business model for full-scale launch.",
+      "url": "https://localhost:8000/projects/bf2608a6-5314-4a74-81c7-cc7685020371/documents/execution-plan",
+      "createdAt": 1786674686
+    },
+    {
+      "docId": "doc_b1600711",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "docType": "Risk Log",
+      "content": "PROJECT RISK LOG: another beef\n\nRISK REGISTER\n\nRisk: Supply Chain Disruption\nImpact: High\nMitigation: Onboard secondary suppliers in different regions to ensure redundancy.\n\nRisk: Perishable Spoilage (Product Loss)\nImpact: High\nMitigation: Implement strict cold-chain monitoring and utilize IoT sensors for real-time temperature tracking.\n\nRisk: Low Market Adoption / Poor Product-Market Fit\nImpact: Medium\nMitigation: Use the 60-day pilot to gather data; iterate on pricing, cuts, and packaging based on direct customer feedback.\n\nDEPENDENCIES\n\n1. Supplier Finalization -> Pilot Launch: The execution of the sales window is dependent on the successful vetting and onboarding of certified local butchers.\n2. Branding Completion -> Marketing Execution: Social media campaigns and sampling cannot launch until logo, packaging design, and brand voice are finalized.\n3. Logistics Infrastructure -> Order Fulfillment: Delivery capabilities (temperature-controlled storage/transport) must be operational before the first Shopify order is processed.\n4. Data Analysis Setup -> Evaluation Phase: The ability to measure success depends on the integration of Shopify, Slack, and Jira automations for real-time tracking.\n\nPOTENTIAL BLOCKERS\n\n1. Regulatory/Health Certification: Delays in obtaining necessary food safety permits or butcher certifications will halt the Sourcing Phase.\n2. Logistics Procurement: Failure to secure temperature-controlled delivery vehicles or storage units will prevent the transition from Sourcing to Pilot Launch.\n3. Supply Shortage: Inability to secure a consistent volume of premium beef from local farms will make achieving the 500-delivery objective impossible.",
+      "url": "https://localhost:8000/projects/bf2608a6-5314-4a74-81c7-cc7685020371/documents/risk-log",
+      "createdAt": 1786674714
+    },
+    {
+      "docId": "doc_dafa96f9",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "docType": "Stakeholder Summary",
+      "content": "STAKEHOLDER SUMMARY: Project \"another beef\"\n\nPROJECT OVERVIEW\nMarket testing and pilot launch of a premium beef brand to validate product-market fit, pricing, and supply chain logistics over a 60-day window.\n\nKEY STAKEHOLDERS (WHO IS INVOLVED)\n- Supply Chain Partners: Local farmers, certified butchers, and secondary backup suppliers.\n- Operations & Logistics: Cold-chain management teams and delivery personnel.\n- Marketing & Creative: Brand designers (packaging/logo) and social media advertising managers.\n- Sales & Customer Success: Direct-to-consumer sales team and customer support agents.\n- Project Leadership: Decision-makers responsible for budget, pricing strategy, and scaling approvals.\n\nCRITICAL DECISIONS REQUIRED\n- Supplier Selection: Final approval of vetted farms and butcher partnerships during the Research & Sourcing phase.\n- Brand Identity: Approval of logo, packaging design, and brand voice.\n- Pricing Strategy: Determination of optimal price points for different cuts based on pilot results.\n- Logistics Infrastructure: Finalization of temperature-controlled storage and delivery protocols.\n- Scaling Roadmap: Decision to expand operations or pivot strategy following the Post-Mortem Analysis.\n\nCOMMUNICATION & REPORTING CHANNELS\n- Sales Alerts: Real-time order notifications delivered via Slack (#sales-team).\n- Feedback Loop: High-priority customer issues and negative feedback tracked via Jira.\n- Inventory Management: Automated stock level monitoring and updates via Notion.\n- Risk Reporting: Regular updates regarding supply chain disruptions, spoilage rates (target <2%), and customer satisfaction (target 4.5/5 CSAT).",
+      "url": "https://localhost:8000/projects/bf2608a6-5314-4a74-81c7-cc7685020371/documents/stakeholder-summary",
+      "createdAt": 1786674747
+    },
+    {
+      "docId": "doc_98151f20",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "docType": "Action Register",
+      "content": "ACTION REGISTER: PROJECT ANOTHER BEEF\n\nID | TASK | PRIORITY | WORKSTREAM | ASSIGNEE | NEXT ACTION | DUE DATE\n01 | Vet local farms and butcher partners | High | Supply Chain | Sourcing Lead | Schedule site visits and quality audits | 2024-07-15\n02 | Establish secondary supplier backup | High | Supply Chain | Sourcing Lead | Identify regional alternatives to mitigate risk | 2024-07-15\n03 | Finalize brand identity and packaging design | Medium | Branding | Brand Designer | Complete logo and label prototypes | 2024-07-15\n04 | Implement cold-chain monitoring system | High | Logistics | Operations Manager | Procure IoT temperature sensors for storage | 2024-07-16\n05 | Set up delivery and storage infrastructure | High | Logistics | Operations Manager | Secure temperature-controlled transit routes | 2024-07-16\n06 | Launch social media and sampling campaign | Medium | Marketing | Marketing Lead | Finalize ad creative and target audience list | 2024-07-16\n07 | Configure Shopify/Slack order automation | Low | Automation | IT Specialist | Test Slack notification trigger for new orders | 2024-07-16\n08 | Monitor spoilage and delivery success rates | High | Evaluation | Data Analyst | Review weekly spoilage logs against 2% target | 2024-09-15\n09 | Analyze pilot sales, margins, and CSAT | Medium | Evaluation | Data Analyst | Compile final post-mortem performance report | 2024-10-15",
+      "url": "https://localhost:8000/projects/bf2608a6-5314-4a74-81c7-cc7685020371/documents/action-register",
+      "createdAt": 1786674784
+    },
+    {
+      "docId": "doc_ac9c631e",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "docType": "Business Launch Plan",
+      "content": "BUSINESS LAUNCH PLAN: another beef\n\nOVERVIEW\nA 60-day pilot program designed to validate product-market fit, premium pricing, and cold-chain logistics for a new high-end beef brand through direct-to-consumer sales.\n\nGO-TO-MARKET SEQUENCE\n\nSTAGE 1: FOUNDATION & SOURCING (June 01 - July 15)\nFocus: Establishing the supply chain and brand identity.\nKey Steps:\n- Finalize partnerships with certified local farms and butchers to secure product quality.\n- Complete premium brand identity design, including logo, packaging, and brand voice.\n- Establish secondary supplier backups to mitigate supply chain disruption risks.\n- Set up Shopify storefront and automated order notification systems (Slack integration).\nMilestone: Supply Chain & Brand Readiness (July 15)\n\nSTAGE 2: PILOT EXECUTION & MARKET ENTRY (July 16 - September 15)\nFocus: Driving sales and testing operational logistics.\nKey Steps:\n- Deploy targeted social media advertising campaigns to reach premium consumers.\n- Execute local sampling programs to drive initial product trial and brand awareness.\n- Activate temperature-controlled delivery network with IoT monitoring to prevent spoilage.\n- Monitor real-time inventory levels via automated alerts (Notion integration).\nMilestone: Pilot Launch Commencement (July 16)\n\nSTAGE 3: EVALUATION & SCALING STRATEGY (September 16 - October 15)\nFocus: Analyzing performance data to inform full-scale launch.\nKey Steps:\n- Analyze sales metrics including churn, repeat purchase rates, and profit margins.\n- Review customer feedback via Jira-integrated support loops to address quality issues.\n- Audit spoilage rates against the <2% target threshold.\n- Finalize pricing adjustments for different cuts based on pilot consumer response.\nMilestone: Post-Mortem Completion (October 15)\n\nCRITICAL SUCCESS METRICS\n- Delivery Volume: 500 successful orders during the pilot period.\n- Customer Satisfaction: Minimum 4.5/5 CSAT score.\n- Operational Efficiency: Product spoilage rate maintained below 2%.",
+      "url": "https://localhost:8000/projects/bf2608a6-5314-4a74-81c7-cc7685020371/documents/business-launch-plan",
+      "createdAt": 1786674828
+    },
+    {
+      "docId": "doc_d7213d4c",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "docType": "Operations Playbook",
+      "content": "OPERATIONS PLAYBOOK: ANOTHER BEEF (PILOT PHASE)\n\nOVERVIEW\nThis playbook defines the operational execution for the \"another beef\" pilot launch. The primary objective is to validate product-market fit, supply chain reliability, and pricing models through a 60-day direct-to-consumer sales window.\n\nROLES AND RESPONSIBILITIES\n\nSupply Chain Manager\n- Vetting local farms and establishing butcher partnerships.\n- Managing secondary supplier relationships to mitigate disruption risks.\n- Ensuring product quality standards are met during sourcing.\n\nLogistics Coordinator\n- Overseeing temperature-controlled storage and delivery execution.\n- Monitoring IoT sensors for cold-chain integrity.\n- Managing the end-to-end fulfillment process from order to doorstep.\n\nMarketing Lead\n- Executing targeted social media advertising campaigns.\n- Coordinating sampling programs and brand voice consistency.\n- Managing packaging presentation and premium brand perception.\n\nData Analyst\n- Tracking sales volume, churn, and repeat purchase rates.\n- Analyzing margins and optimal price points per cut.\n- Producing the post-mortem evaluation report.\n\nOperations Lead\n- Oversight of all workstreams and budget adherence.\n- High-level risk mitigation and crisis management.\n- Managing the transition from pilot to scale.\n\nCORE WORKFLOWS\n\n1. Sourcing & Supplier Onboarding\n- Step 1: Identify and audit local farms/butchers for certification compliance.\n- Step 2: Finalize product offerings (specific cuts) and pricing tiers.\n- Step 3: Establish delivery schedules from butcher to central storage.\n\n2. Order Fulfillment & Delivery\n- Step 1: Receive automated order notification via Slack.\n- Step 2: Retrieve product from temperature-controlled storage.\n- Step 3: Pack using premium branded packaging.\n- Step 4: Dispatch via temperature-controlled logistics partner.\n- Step 5: Confirm delivery completion and monitor for spoilage alerts.\n\n3. Customer Feedback Loop\n- Step 1: Monitor customer reviews and direct communications.\n- Step 2: Flag negative feedback for immediate action.\n- Step 3: Convert critical feedback into high-priority Jira tasks for product/pricing iteration.\n\n4. Inventory Management\n- Step 1: Track real-time stock levels in Notion.\n- Step 2: Trigger reorder process when inventory falls below 20% threshold.\n- Step 3: Reconcile physical stock with digital records weekly.\n\nTOOL STACK\n\nSales & Commerce: Shopify (Order processing and customer interface)\nCommunication: Slack (Real-time team alerts and sales notifications)\nTask Management: Jira (Issue tracking, feedback management, and product backlog)\nDocumentation & Inventory: Notion (Inventory tracking and supplier databases)\nMonitoring: IoT Sensors (Temperature and cold-chain tracking)\n\nRECURRING PROCESSES\n\nDaily\n- Order monitoring and fulfillment execution.\n- Real-time temperature checks via sensor alerts.\n- Monitoring #sales-team Slack channel for new orders.\n\nWeekly\n- Inventory audit and replenishment triggers in Notion.\n- Supplier performance check-ins (quality and delivery timing).\n- Review of marketing campaign engagement metrics.\n\nMonthly/End of Pilot\n- Comprehensive sales data analysis (Revenue, Margin, Churn).\n- Customer Satisfaction Score (CSAT) review.\n- Post-mortem meeting to determine scaling strategy based on pilot results.\n\nRISK MITIGATION PROTOCOLS\n\nSupply Chain Disruption: Immediately activate pre-vetted secondary suppliers in alternative regions.\nPerishable Spoilage: If IoT sensors indicate temperature deviation, quarantine stock immediately and initiate replacement protocol.\nLow Market Adoption: Execute rapid iteration of pricing models or packaging designs based on Jira feedback trends.",
+      "url": "https://localhost:8000/projects/bf2608a6-5314-4a74-81c7-cc7685020371/documents/operations-playbook",
+      "createdAt": 1786674873
+    },
+    {
+      "docId": "doc_302ab3e6",
+      "projectId": "bf2608a6-5314-4a74-81c7-cc7685020371",
+      "docType": "Go-To-Market Outline",
+      "content": "GO-TO-MARKET OUTLINE: ANOTHER BEEF\n\nAUDIENCE\nPrimary: Culinary enthusiasts and \"foodies\" who prioritize ingredient provenance, flavor, and premium quality in their home cooking.\nSecondary: Health-conscious families and home chefs looking for transparently sourced, high-end protein options.\nTertiary: Local community advocates interested in supporting regional farmers and artisanal butcher partnerships (Farm-to-Table segment).\n\nOFFER\nCore Product: A curated selection of premium beef cuts, vetted by certified local butchers and delivered via a temperature-controlled cold chain.\nPilot Offer: The \"Founder\u2019s Sampler Box\"\u2014a limited-edition collection of high-value cuts designed to introduce the brand's quality at an accessible entry point.\nValue Proposition: Uncompromising freshness, transparent local sourcing, and luxury-grade packaging delivered directly to your door.\n\nCHANNELS\nDigital Storefront: Shopify-based D2C website for seamless ordering, subscription management, and inventory tracking.\nSocial Media: Instagram and Facebook for visual storytelling (product close-ups, farm footage) and targeted advertising.\nEmail/SMS: Direct communication for stock alerts, new cut announcements, and personalized follow-ups.\nLocal Activation: Pop-up sampling events at premium local markets to drive physical product trial and immediate feedback.\n\nMESSAGING\nBrand Voice: Premium, artisanal, transparent, and trustworthy.\nKey Messaging Pillars:\nProvenance: \"Traceable from local farms to your table.\"\nQuality: \"Expertly butchered, uncompromisingly premium.\"\nReliability: \"Precision-controlled delivery for peak freshness.\"\n\nFIRST CAMPAIGNS\nCampaign 1: The \"Origin Story\" (Awareness)\nObjective: Build trust and brand recognition before the pilot launch.\nTactic: Video content showcasing the vetting process of local farms and the craftsmanship of the butchers.\nCall to Action: Join the waitlist for early access to the pilot launch.\n\nCampaign 2: The \"First Taste\" Drive (Conversion)\nObjective: Achieve the goal of 500 successful deliveries during the 60-day window.\nTactic: Targeted social media ads promoting the \"Founder\u2019s Sampler Box\" with a limited-time introductory price.\nCall to Action: Order your sampler box before the limited supply runs out.\n\nCampaign 3: The \"Feedback Loop\" (Retention & Optimization)\nObjective: Gather critical data for the Evaluation phase and improve CSAT.\nTactic: Post-purchase email sequences incentivizing detailed reviews and feedback on meat quality, packaging, and delivery experience.\nCall to Action: Share your experience to help shape the future of premium beef.",
+      "url": "https://localhost:8000/projects/bf2608a6-5314-4a74-81c7-cc7685020371/documents/go-to-market-outline",
+      "createdAt": 1786674911
+    }
+  ],
+  "dashboard": {
+    "generatedAt": 1786674911,
+    "summary": {
+      "objectives": 3,
+      "milestones": 3,
+      "risks": 3,
+      "phases": 3,
+      "automations": 3
+    },
+    "kpis": {
+      "objectiveCount": 3,
+      "milestoneCount": 3,
+      "riskCount": 3,
+      "phaseCount": 3,
+      "automationCount": 3,
+      "highRiskCount": 2
+    },
+    "forecast": {
+      "status": "on_track",
+      "confidence": 0.85
+    },
+    "alerts": [
+      {
+        "type": "risk",
+        "severity": "high",
+        "message": "High-impact risk detected: Supply Chain Disruption"
+      },
+      {
+        "type": "risk",
+        "severity": "high",
+        "message": "High-impact risk detected: Perishable Spoilage"
+      }
+    ],
+    "rawPlan": {
+      "projectName": "another beef",
+      "description": "Market testing and pilot launch for a new premium beef brand to validate product quality, pricing, and supply chain logistics.",
+      "goals": [
+        "Validate product-market fit through direct-to-consumer sales",
+        "Establish a reliable local supply chain with certified butchers",
+        "Test consumer response to premium branding and packaging",
+        "Determine optimal price points for different cuts"
+      ],
+      "phases": [
+        {
+          "name": "Research & Sourcing",
+          "summary": "Identify suppliers and finalize product offerings.",
+          "workstreams": [
+            {
+              "name": "Supply Chain",
+              "summary": "Vetting local farms and establishing butcher partnerships."
+            },
+            {
+              "name": "Branding",
+              "summary": "Developing logo, packaging design, and brand voice."
+            }
+          ]
+        },
+        {
+          "name": "Pilot Launch",
+          "summary": "Execute a 60-day limited sales window.",
+          "workstreams": [
+            {
+              "name": "Logistics",
+              "summary": "Setting up temperature-controlled delivery and storage."
+            },
+            {
+              "name": "Marketing",
+              "summary": "Running targeted social media ads and sampling campaigns."
+            }
+          ]
+        },
+        {
+          "name": "Evaluation",
+          "summary": "Analyze sales data and customer feedback for scaling.",
+          "workstreams": [
+            {
+              "name": "Data Analysis",
+              "summary": "Reviewing churn, repeat purchase rate, and margins."
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "name": "Supply Chain Disruption",
+          "impact": "High",
+          "mitigation": "Onboard secondary suppliers in different regions."
+        },
+        {
+          "name": "Perishable Spoilage",
+          "impact": "High",
+          "mitigation": "Implement strict cold-chain monitoring and IoT sensors."
+        },
+        {
+          "name": "Low Market Adoption",
+          "impact": "Medium",
+          "mitigation": "Iterate on pricing and packaging based on pilot feedback."
+        }
+      ],
+      "automations": [
+        {
+          "id": "slk_01",
+          "name": "Order Alert",
+          "system": "slack",
+          "trigger": "New order placed in Shopify",
+          "action": "Post notification to #sales-team channel"
+        },
+        {
+          "id": "jt_01",
+          "name": "Feedback Tasking",
+          "system": "jira",
+          "trigger": "Negative customer feedback received",
+          "action": "Create high-priority issue in Product Backlog"
+        },
+        {
+          "id": "nt_01",
+          "name": "Inventory Sync",
+          "system": "notion",
+          "trigger": "Stock level falls below 20%",
+          "action": "Update Inventory Tracker database"
+        }
+      ],
+      "timeline": [
+        {
+          "id": "t_01",
+          "name": "Sourcing Phase",
+          "phase": "Research & Sourcing",
+          "start": "2024-06-01",
+          "end": "2024-07-15"
+        },
+        {
+          "id": "t_02",
+          "name": "Pilot Execution",
+          "phase": "Pilot Launch",
+          "start": "2024-07-16",
+          "end": "2024-09-15"
+        },
+        {
+          "id": "t_03",
+          "name": "Post-Mortem Analysis",
+          "phase": "Evaluation",
+          "start": "2024-09-16",
+          "end": "2024-10-15"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "obj_01",
+          "description": "Achieve 500 successful deliveries during the pilot period."
+        },
+        {
+          "id": "obj_02",
+          "description": "Maintain a customer satisfaction score (CSAT) of 4.5/5."
+        },
+        {
+          "id": "obj_03",
+          "description": "Keep product spoilage rate below 2%."
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "ts": 1786674911,
+      "type": "created",
+      "message": "Project created."
+    },
+    {
+      "ts": 1786674911,
+      "type": "automation",
+      "message": "simulated: Order Alert via slack"
+    },
+    {
+      "ts": 1786674911,
+      "type": "automation",
+      "message": "simulated: Feedback Tasking via jira"
+    },
+    {
+      "ts": 1786674911,
+      "type": "automation",
+      "message": "simulated: Inventory Sync via notion"
+    }
+  ],
+  "autonomyEnabled": false,
+  "dailyStandupEnabled": false,
+  "integrationActions": [
+    {
+      "system": "slack",
+      "name": "Order Alert",
+      "status": "simulated",
+      "result": {
+        "simulated": true,
+        "system": "slack",
+        "message": "[Order Alert] Post notification to #sales-team channel",
+        "retryAttempted": true,
+        "requiresApproval": true
+      }
+    },
+    {
+      "system": "jira",
+      "name": "Feedback Tasking",
+      "status": "simulated",
+      "result": {
+        "simulated": true,
+        "system": "jira",
+        "summary": "Feedback Tasking",
+        "description": "Create high-priority issue in Product Backlog",
+        "retryAttempted": true,
+        "requiresApproval": true
+      }
+    },
+    {
+      "system": "notion",
+      "name": "Inventory Sync",
+      "status": "simulated",
+      "result": {
+        "simulated": true,
+        "system": "notion",
+        "message": "[Inventory Sync] Update Inventory Tracker database",
+        "retryAttempted": true,
+        "requiresApproval": true
+      }
+    }
+  ],
+  "autopilotOps": {
+    "triage": [
+      {
+        "taskId": "task_9045651d",
+        "title": "Mitigate risk: Supply Chain Disruption",
+        "status": "todo",
+        "priority": "high",
+        "score": 4,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_81b0ec3a",
+        "title": "Mitigate risk: Perishable Spoilage",
+        "status": "todo",
+        "priority": "high",
+        "score": 4,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_4464496c",
+        "title": "Mitigate risk: Low Market Adoption",
+        "status": "todo",
+        "priority": "high",
+        "score": 4,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_5918d915",
+        "title": "Implement automation: Order Alert",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_19b0e605",
+        "title": "Implement automation: Feedback Tasking",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_f11fbfdc",
+        "title": "Implement automation: Inventory Sync",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Automation Agent"
+      },
+      {
+        "taskId": "task_5bb753b9",
+        "title": "Complete objective: Achieve 500 successful deliveries during the pilot period.",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Delivery Agent"
+      },
+      {
+        "taskId": "task_9b9362d5",
+        "title": "Complete objective: Maintain a customer satisfaction score (CSAT) of 4.5/5.",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Delivery Agent"
+      },
+      {
+        "taskId": "task_fdb7de78",
+        "title": "Complete objective: Keep product spoilage rate below 2%.",
+        "status": "todo",
+        "priority": "high",
+        "score": 3,
+        "assignee": "Delivery Agent"
+      },
+      {
+        "taskId": "task_faa7c6bb",
+        "title": "Research & Sourcing: Supply Chain",
+        "status": "todo",
+        "priority": "medium",
+        "score": 0,
+        "assignee": "Delivery Agent"
+      }
+    ],
+    "lastTriageAt": 1786674911,
+    "approvalMode": "warn"
+  },
+  "approvalPolicy": {
+    "mode": "warn",
+    "requiresExplicitApproval": false
+  },
+  "lastAutopilotDecisionAt": 1786674911
+}
