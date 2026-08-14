@@ -554,6 +554,11 @@
       "ts": 1786673156,
       "type": "automation",
       "message": "executed: PR Sync via github"
+    },
+    {
+      "ts": 1786673157,
+      "type": "github_sync",
+      "message": "Project synced to GitHub: https://github.com/Kylestew35/test/blob/main/autopilot-projects/446ade7d-6bdc-46db-a843-e6a4d2d91f4a.json"
     }
   ],
   "autonomyEnabled": false,
@@ -581,6 +586,16 @@
         "system": "github",
         "url": "https://github.com/Kylestew35/test/issues/5",
         "retryAttempted": false
+      }
+    },
+    {
+      "system": "github",
+      "name": "Project Sync",
+      "status": "executed",
+      "result": {
+        "simulated": false,
+        "system": "github",
+        "url": "https://github.com/Kylestew35/test/blob/main/autopilot-projects/446ade7d-6bdc-46db-a843-e6a4d2d91f4a.json"
       }
     }
   ],
